@@ -22,7 +22,7 @@ Copy-paste the stylesheet `<link>` into your `<head>` before all other styleshee
 [minified](https://cdn.jsdelivr.net/gh/dobokcss/reset/style.min.css) 
 
 #### Use a version range instead of a specific version
-- `https://cdn.jsdelivr.net/gh/dobokcss/reset@1.0.0/style.min.css` 
+- `https://cdn.jsdelivr.net/gh/dobokcss/reset@1.0.1/style.min.css` 
 
 #### Use a version range instead of a specific version
 - `https://cdn.jsdelivr.net/gh/dobokcss/reset@1.0/style.min.css` 

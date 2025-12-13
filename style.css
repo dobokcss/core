@@ -6,7 +6,8 @@
  * -------------------------------------------------
  * Estefanio NS <estefanions AT gmail DOT com>
  * https://github.com/dobokcss/reset
- * version: 1.0.0
+ * version: 1.0.1
+ * update: 2512141531
  */
 
 html, body, div, span, applet, object, iframe,
@@ -34,8 +35,7 @@ body{
 }
 
 u, s, del, ins, strike,
-a, a:link, a:visited, a:hover, a:active
-{
+a, a:link, a:visited, a:hover, a:active {
     text-decoration: none
 }
 
@@ -58,8 +58,7 @@ button, input {
 
 button, html input[type="button"],
 html input[type="reset"], 
-html input[type="submit"]
-{
+html input[type="submit"] {
     cursor: pointer; 
     -webkit-appearance: button
 }
