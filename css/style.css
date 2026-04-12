@@ -1,8 +1,8 @@
 /*
  * Dobokcss v1.0.0 (https://dobokcss.github.io)
  * Author:  Estefanio N Santos <estefanions AT gmail DOT com> 
- * Copyright 2016-2025
- * Registry: 2508261240
+ * Copyright 2016-2026
+ * Registry: 2604121232
  */
 
 :root {
@@ -11,7 +11,15 @@
     --hv_prm: #323f44;
     --hv_scn: #7c0202;
     --wht: #fff;
-    --blk: #000
+    --blk: #000;
+
+    --accent-high-main: #ff6d00;
+    --accent-mid-main: #ffd600;
+    --accent-low-main: #00c853;
+
+    --accent-high: #ff6d00;
+    --accent-mid: #ffd600;
+    --accent-low: #00c853;
 }
 
 
@@ -135,6 +143,69 @@ input:focus, select:focus, textarea:focus {
     transition: 0.8s
 }
 
+.al {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+    display: block;
+    overflow: hidden;
+}
+
+.al :is(b, strong) { font-weight: bold; }
+.al :is(i, em) { font-style: italic; }
+
+.al_high { --al-color: var(--accent-high); }
+.al_mid  { --al-color: var(--accent-mid); }
+.al_low  { --al-color: var(--accent-low); }
+
+.bt_high { --bt-color: var(--accent-high); }
+.bt_mid  { --bt-color: var(--accent-mid); }
+.bt_low  { --bt-color: var(--accent-low); }
+
+[class*="al_"] {
+    background-color: color-mix(in srgb, var(--al-color), #fff 85%);
+    color: color-mix(in srgb, var(--al-color), #000 60%);
+    border: 1px solid color-mix(in srgb, var(--al-color), #000 15%);
+    position: relative;
+}
+
+[class*="al_"] a {
+    color: color-mix(in srgb, var(--al-color), #000 70%);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+[class*="al_"] a:hover {
+    color: color-mix(in srgb, var(--al-color), #000 20%);
+}
+
+[class*="bt_"] {
+    color: var(--blk);
+    background-color: var(--bt-color);
+    border: 1px solid color-mix(in srgb, var(--bt-color), #000 15%);
+}
+
+[class*="bt_"]:hover {
+    color: var(--wht);
+    background-color: color-mix(in srgb, var(--bt-color), #000 15%);
+}
+
+.bt_high{color: #fff}
+
+.al .bt_close{
+    --bt-color: var(--al-color);
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 12px;
+    line-height: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 10px
+}
+
 
 .bt_prm, .bg_prm{color: var(--wht); background: var(--prm)}
 .bt_scn, .bg_scn{color: var(--wht); background: var(--scn)}
@@ -160,6 +231,10 @@ input:focus, select:focus, textarea:focus {
 }
 
 .bg_raw{background-color: transparent}
+
+.bg_high{color: #ffff; background: var(--accent-high)}
+.bg_mid{ color: #000; background: var(--accent-mid)}
+.bg_low{ color: #000; background: var(--accent-low)}
 
 
 .cr_pn{cursor: pointer}
@@ -327,6 +402,13 @@ img, object, embed, video, iframe, iframe[style] {
 .tx_scn , .lk_scn, .tx_hv_scn:hover {color: var(--scn)}
 .tx_lgt , .lk_lgt, .tx_hv_lgt:hover {color: #f6f6f6}
 .tx_ntl , .lk_ntl, .tx_hv_ntl:hover {color: #ccc}
+.tx_high { color: var(--accent-high); }
+.tx_mid  { color: var(--accent-mid); }
+.tx_low  { color: var(--accent-low); }
+
+.lk_high { color: var(--accent-high); }
+.lk_mid  { color: var(--accent-mid); }
+.lk_low  { color: var(--accent-low); }
 
 .lk_prm:hover{ color: var(--hv_prm)}
 .lk_scn:hover{ color: var(--hv_scn)}
@@ -337,6 +419,18 @@ img, object, embed, video, iframe, iframe[style] {
 .lk_hv_scn:hover { color: var(--scn) }
 .lk_hv_lgt:hover { color: #f6f6f6}
 .lk_hv_ntl:hover { color: #ccc}
+
+.lk_high:hover {
+    color: color-mix(in srgb, var(--accent-high), #000 30%);
+}
+
+.lk_mid:hover {
+    color: color-mix(in srgb, var(--accent-mid), #000 30%);
+}
+
+.lk_low:hover {
+    color: color-mix(in srgb, var(--accent-low), #000 30%);
+}
 
 
 .lk_prm.lt_y a, .lk_prm.lt_x a { color: var(--prm) }
