@@ -1,21 +1,23 @@
 /*
- * Dobokcss v1.1.0 (https://dobokcss.github.io)
+ * Dobokcss v1.5.1 (https://dobokcss.github.io)
  * Author:  Estefanio N Santos <estefanions AT gmail DOT com> 
  * Copyright 2016-2026
- * Registry: 2604121232
+ * Registry: 2607282359
  */
 
 :root {
-    --prm: #40535b;
-    --scn: #c00;
+    --brand-pri:   #40535b;
+    --brand-sec: #3d6b7f;
+
     --hv_prm: #323f44;
     --hv_scn: #7c0202;
     --wht: #fff;
     --blk: #000;
 
-    --accent-high: #ff6d00;
+    --accent-high: #c00;
     --accent-mid: #ffd600;
     --accent-low: #00c853;
+    --accent-info: #0b5ed7;
 }
 
 
@@ -58,24 +60,44 @@ legend{ padding: 0 5px }
 
 .bd, .bt.bd{border: 1px solid transparent}
 
-.bt.bd_prm, .bd_prm, .ld.ld_prm {
-    color: var(--prm);
-    border-color: var(--prm)
+.bd_prm, .ld.ld_prm {
+    color: var(--brand-pri);
+    border-color: var(--brand-pri)
 }
 
-.bt.bd_scn, .bd_scn, .ld.ld_scn {
-    color: var(--scn);
-    border-color: var(--scn)
+.bd_scn, .ld.ld_scn {
+    color: var(--brand-sec);
+    border-color: var(--brand-sec)
 }
 
-.bt.bd_lgt, .bd_lgt, .ld.ld_lgt {
-    color: #666;
+.bd_lgt, .ld.ld_lgt {
+    color: color-mix(in srgb, #f6f6f6, #000 40%);
     border-color: #f6f6f6
 }
 
-.bt.bd_ntl, .bd_ntl, .ld.ld_ntl {
-    color: #666;
+.bd_ntl, .ld.ld_ntl {
+    color: color-mix(in srgb, #ccc, #000 40%);
     border-color: #ccc
+}
+
+.bd_high, .ld.ld_high {
+    color: color-mix(in srgb, var(--accent-high), #000 40%);
+    border-color: var(--accent-high)
+}
+
+.bd_mid, .ld.ld_mid {
+    color: color-mix(in srgb, var(--accent-mid), #000 40%);
+    border-color: var(--accent-mid)
+}
+
+.bd_low, .ld.ld_low {
+    color: color-mix(in srgb, var(--accent-low), #000 40%);
+    border-color: var(--accent-low)
+}
+
+.bd_info, .ld.ld_info {
+    color: color-mix(in srgb, var(--accent-info), #000 40%);
+    border-color: var(--accent-info)
 }
 
 .rd_circle{
@@ -135,7 +157,7 @@ div.bt, span.bt, a.bt {
 
 input.bt, button.bt{ padding: 7px 35px }
 input:focus, select:focus, textarea:focus {
-    border-color: var(--prm);
+    border-color: var(--brand-pri);
     transition: 0.8s
 }
 
@@ -155,15 +177,30 @@ input:focus, select:focus, textarea:focus {
 .al_high { --al-color: var(--accent-high); }
 .al_mid  { --al-color: var(--accent-mid); }
 .al_low  { --al-color: var(--accent-low); }
+.al_info { --al-color: var(--accent-info); }
 
+.bg_prm{color: var(--wht); background: var(--brand-pri)}
+.bg_scn{color: var(--wht); background: var(--brand-sec)}
+.bg_lgt{color: #000; background: #f6f6f6}
+.bg_ntl, .bg{color: #000; background: #ccc}
+.bg_high{color: #000; background: var(--accent-high)}
+.bg_mid{color: #000; background:  var(--accent-mid)}
+.bg_low{color: #000; background:  var(--accent-low)}
+.bg_info{color: #fff; background: var(--accent-info)}
+
+.bt_prm, .bg_prm{color: var(--wht); --bt-color: var(--brand-pri)}
+.bt_scn, .bg_scn{color: var(--wht); --bt-color: var(--brand-sec)}
+.bt_lgt, .bg_lgt{color: #000; --bt-color: #f6f6f6}
+.bt_ntl, .bg_ntl, .bg{color: #000; --bt-color: #ccc}
 .bt_high { --bt-color: var(--accent-high); }
 .bt_mid  { --bt-color: var(--accent-mid); }
 .bt_low  { --bt-color: var(--accent-low); }
+.bt_info { --bt-color: var(--accent-info); }
 
 [class*="al_"] {
     background-color: color-mix(in srgb, var(--al-color), #fff 85%);
     color: color-mix(in srgb, var(--al-color), #000 60%);
-    border: 1px solid color-mix(in srgb, var(--al-color), #000 15%);
+    border: 1px solid color-mix(in srgb, var(--al-color), #000 40%);
     position: relative;
 }
 
@@ -180,15 +217,16 @@ input:focus, select:focus, textarea:focus {
 [class*="bt_"] {
     color: var(--blk);
     background-color: var(--bt-color);
-    border: 1px solid color-mix(in srgb, var(--bt-color), #000 15%);
+    border: 1px solid color-mix(in srgb, var(--bt-color), #000 40%);
 }
 
 [class*="bt_"]:hover {
     color: var(--wht);
-    background-color: color-mix(in srgb, var(--bt-color), #000 15%);
+    background-color: color-mix(in srgb, var(--bt-color), #000 40%);
 }
 
-.bt_high{color: #fff}
+.bt_prm, .bt_scn, .bt_high, .bt_info,
+.al.al_info .bt_close, .al.al_high .bt_close {color: #fff}
 
 .al .bt_close{
     --bt-color: var(--al-color);
@@ -203,25 +241,18 @@ input:focus, select:focus, textarea:focus {
 }
 
 
-.bt_prm, .bg_prm{color: var(--wht); background: var(--prm)}
-.bt_scn, .bg_scn{color: var(--wht); background: var(--scn)}
-.bt_lgt, .bg_lgt{color: #000; background: #f6f6f6}
-.bt_ntl, .bg_ntl, .bg{color: #000; background: #ccc}
+[class*="bt_"],
+[class*="hv_"]
+{ transition: box-shadow .15s ease }
 
-.bt_prm:hover{color: var(--wht); background: var(--hv_prm)}
-.bt_scn:hover{color: var(--wht); background: var(--hv_scn)}
-.bt_lgt:hover{color: #000; background: #d6d6d6}
-.bt_ntl:hover{color: #000; background: #afafaf}
+.hv_bg:hover{ box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, .09) }
+.hv_prm:hover {color: var(--wht);  background: var(--brand-pri)}
+.hv_scn:hover {color: var(--wht);  background: var(--brand-sec)}
+.hv_lgt:hover {color: #000; background: #f6f6f6}
+.hv_ntl:hover {color: #000; background: #ccc}
 
-.bg_hv_prm:hover, .bt_hv_prm:hover{color: var(--wht);  background: var(--prm)}
-.bg_hv_scn:hover, .bt_hv_scn:hover{color: var(--wht);  background: var(--scn)}
-.bg_hv_lgt:hover, .bt_hv_lgt:hover{color: #000; background: #f6f6f6}
-.bg_hv_ntl:hover, .bt_hv_ntl:hover{color: #000; background: #ccc}
 
-.bg_hv{ transition: box-shadow .15s ease }
-.bg_hv:hover{ box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, .08) }
-
-.bg_alpha, .bg_hv_alpha:hover {
+.bg_alpha, .hv_bg_alpha:hover {
     background-color:rgb(0,0,0);
     background-color:rgba(0,0,0,0.4)
 }
@@ -286,8 +317,8 @@ input:focus, select:focus, textarea:focus {
 .pa.pa_ac_prm a.active, 
 .pa.pa_ac_scn a.active { color: var(--wht)} 
 
-.pa.pa_ac_prm a.active { background: var(--prm); border-color: var(--prm) }
-.pa.pa_ac_scn a.active { background: var(--scn); border-color: var(--scn) }
+.pa.pa_ac_prm a.active { background: var(--brand-pri); border-color: var(--brand-pri) }
+.pa.pa_ac_scn a.active { background: var(--brand-sec); border-color: var(--brand-sec) }
 
 .pa a:disabled {
   pointer-events: none;
@@ -394,8 +425,8 @@ img, object, embed, video, iframe, iframe[style] {
 
 .scale_none{ max-width: none !important }
 
-.tx_prm , .lk_prm, .tx_hv_prm:hover {color: var(--prm)}
-.tx_scn , .lk_scn, .tx_hv_scn:hover {color: var(--scn)}
+.tx_prm , .lk_prm, .tx_hv_prm:hover {color: var(--brand-pri)}
+.tx_scn , .lk_scn, .tx_hv_scn:hover {color: var(--brand-sec)}
 .tx_lgt , .lk_lgt, .tx_hv_lgt:hover {color: #f6f6f6}
 .tx_ntl , .lk_ntl, .tx_hv_ntl:hover {color: #ccc}
 .tx_high { color: var(--accent-high); }
@@ -411,8 +442,8 @@ img, object, embed, video, iframe, iframe[style] {
 .lk_lgt:hover{ color: #d6d6d6}
 .lk_ntl:hover{ color: #000}
 
-.lk_hv_prm:hover { color: var(--prm) }
-.lk_hv_scn:hover { color: var(--scn) }
+.lk_hv_prm:hover { color: var(--brand-pri) }
+.lk_hv_scn:hover { color: var(--brand-sec) }
 .lk_hv_lgt:hover { color: #f6f6f6}
 .lk_hv_ntl:hover { color: #ccc}
 
@@ -429,8 +460,8 @@ img, object, embed, video, iframe, iframe[style] {
 }
 
 
-.lk_prm.lt_y a, .lk_prm.lt_x a { color: var(--prm) }
-.lk_scn.lt_y a, .lk_scn.lt_x a { color: var(--scn) }
+.lk_prm.lt_y a, .lk_prm.lt_x a { color: var(--brand-pri) }
+.lk_scn.lt_y a, .lk_scn.lt_x a { color: var(--brand-sec) }
 .lk_lgt.lt_y a, .lk_lgt.lt_x a { color: #f6f6f6 }
 .lk_ntl.lt_y a, .lk_ntl.lt_x a { color: #ccc }
 
@@ -729,8 +760,8 @@ img, object, embed, video, iframe, iframe[style] {
     }
 .tb_fill tr{margin-bottom: 10px}
 
-.tb_prm tr td, .tb_hv_prm tr:hover td{ background: var(--prm) }
-.tb_scn tr td, .tb_hv_scn tr:hover td{ background: var(--scn) }
+.tb_prm tr td, .tb_hv_prm tr:hover td{ background: var(--brand-pri) }
+.tb_scn tr td, .tb_hv_scn tr:hover td{ background: var(--brand-sec) }
 .tb_lgt tr td, .tb_hv_lgt tr:hover td{ background: #f6f6f6 }
 .tb_ntl tr td, .tb_hv_ntl tr:hover td{ background: #ccc }
 
@@ -985,7 +1016,7 @@ label[for="mn_x_bt"]:hover{ background: rgba(50, 50, 50, 0.12) }
     border-left-color: transparent
 }
 
-.mn_x.mn_prm { background: var(--prm) }
+.mn_x.mn_prm { background: var(--brand-pri) }
 
 .mn_x.mn_prm > ul > li.text,
 .mn_x.mn_prm > ul > li > a {
@@ -1007,7 +1038,7 @@ label[for="mn_x_bt"]:hover{ background: rgba(50, 50, 50, 0.12) }
     border-top-color: #fff
 }
 
-.mn_x.mn_scn { background: var(--scn) }
+.mn_x.mn_scn { background: var(--brand-sec) }
 
 .mn_x.mn_scn > ul > li.text,
 .mn_x.mn_scn > ul > li > a {
@@ -1082,7 +1113,7 @@ label[for="mn_x_bt"]:hover{ background: rgba(50, 50, 50, 0.12) }
 
 .mn_x.mn_lgt.mn_hv_prm > ul > li:hover > a,
 .mn_x.mn_lgt.mn_hv_prm > ul > li.active > a 
-{ color: #fff; background: var(--prm) }
+{ color: #fff; background: var(--brand-pri) }
 
 .mn_x.mn_hv_scn > ul > li:hover > a,
 .mn_x.mn_hv_scn > ul > li.active > a ,
@@ -1095,7 +1126,7 @@ label[for="mn_x_bt"]:hover{ background: rgba(50, 50, 50, 0.12) }
 
 .mn_x.mn_lgt.mn_hv_scn > ul > li:hover > a,
 .mn_x.mn_lgt.mn_hv_scn > ul > li.active > a 
-{ color: #fff; background: var(--scn) }
+{ color: #fff; background: var(--brand-sec) }
 
 .mn_x.mn_hv_lgt > ul > li:hover > a,
 .mn_x.mn_hv_lgt > ul > li.active > a ,
@@ -1197,7 +1228,7 @@ max-height: 1000px
 
 .mn_y.mn_prm a, .mn_y.mn_prm label{
    color: #fff;
-   background: var(--prm)
+   background: var(--brand-pri)
 }
 
 .mn_y.mn_prm a:hover, .mn_y.mn_prm label:hover{
@@ -1206,7 +1237,7 @@ max-height: 1000px
 
 .mn_y.mn_scn a, .mn_y.mn_scn label{
    color: #fff;
-   background: var(--scn)
+   background: var(--brand-sec)
 }
 
 .mn_y.mn_scn a:hover, .mn_y.mn_scn label:hover{
@@ -1676,12 +1707,12 @@ max-height: 1000px
     .tx_lg_d_no{text-decoration: none}
     .tx_lg_o{text-decoration: overline}
 
-    .tx_lg_prm, .lk_lg_prm{color: var(--prm)}
-    .tx_lg_scn, .lk_lg_scn{color: var(--scn)}
+    .tx_lg_prm, .lk_lg_prm{color: var(--brand-pri)}
+    .tx_lg_scn, .lk_lg_scn{color: var(--brand-sec)}
     .tx_lg_lgt, .lk_lg_lgt{color: #f6f6f6}
     .tx_lg_ntl, .lk_lg_ntl{color: #ccc}
 
-    .tx_lg_hv_prm:hover, .lk_lg_prm:hover{color: var(--prm) }
+    .tx_lg_hv_prm:hover, .lk_lg_prm:hover{color: var(--brand-pri) }
     .tx_lg_hv_scn:hover, .lk_lg_scn:hover{color: var(--hv_scn) }
     .tx_lg_hv_lgt:hover, .lk_lg_lgt:hover{color: #d6d6d6}
     .tx_lg_hv_ntl:hover, .lk_lg_ntl:hover{color: #000}
@@ -1894,12 +1925,12 @@ max-height: 1000px
     .tx_sm_d_no{text-decoration: none}
     .tx_sm_o{text-decoration: overline}
 
-    .tx_sm_prm, .lk_sm_prm{color: var(--prm)}
-    .tx_sm_scn, .lk_sm_scn{color:var(--scn)}
+    .tx_sm_prm, .lk_sm_prm{color: var(--brand-pri)}
+    .tx_sm_scn, .lk_sm_scn{color:var(--brand-sec)}
     .tx_sm_lgt, .lk_sm_lgt{color: #f6f6f6}
     .tx_sm_ntl, .lk_sm_ntl{color: #ccc}
 
-    .tx_sm_hv_prm:hover, .lk_sm_prm:hover{color: var(--prm)}
+    .tx_sm_hv_prm:hover, .lk_sm_prm:hover{color: var(--brand-pri)}
     .tx_sm_hv_scn:hover, .lk_sm_scn:hover{color: var(--hv_scn)}
     .tx_sm_hv_lgt:hover, .lk_sm_lgt:hover{color: #d6d6d6}
     .tx_sm_hv_ntl:hover, .lk_sm_ntl:hover{color: #000}
@@ -2105,12 +2136,12 @@ max-height: 1000px
     .tx_md_lg{ font-size: 1.25em}
     .tx_md_xlg{font-size: 2.25em}
 
-    .tx_md_prm, .lk_md_prm{color: var(--prm)}
-    .tx_md_scn, .lk_md_scn{color: var(--scn)}
+    .tx_md_prm, .lk_md_prm{color: var(--brand-pri)}
+    .tx_md_scn, .lk_md_scn{color: var(--brand-sec)}
     .tx_md_lgt, .lk_md_lgt{color: #f6f6f6}
     .tx_md_ntl, .lk_md_ntl{color: #ccc}
 
-    .tx_md_hv_prm:hover, .lk_md_prm:hover{color: var(--prm)}
+    .tx_md_hv_prm:hover, .lk_md_prm:hover{color: var(--brand-pri)}
     .tx_md_hv_scn:hover, .lk_md_scn:hover{color: var(--hv_scn)}
     .tx_md_hv_lgt:hover, .lk_md_lgt:hover{color: #d6d6d6}
     .tx_md_hv_ntl:hover, .lk_md_ntl:hover{color: #000}
