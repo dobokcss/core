@@ -1,0 +1,55 @@
+/*!
+ * DobokCSS v2.0.0 (https://dobockcss.github.io)
+ * Author:  Estefanio N Santos <estefanions AT gmail DOT com> 
+ * License: MIT
+ * 
+ * Mobile-First, Flexbox & CSS Tokens Architecture
+ */
+
+.tx_prm { color: var(--brand-prm); }
+.tx_scn { color: var(--brand-scn); }
+.tx_lgt { color: var(--brand-lgt); }
+.tx_ntl { color: var(--brand-ntl); }
+
+.tx_high { color: var(--accent-high); }
+.tx_mid  { color: var(--accent-mid); }
+.tx_low  { color: var(--accent-low); }
+.tx_info { color: var(--accent-info); }
+
+.bg_prm, .bg_hv_prm:hover { background-color: var(--brand-prm); color: var(--color-wht); }
+.bg_scn, .bg_hv_scn:hover { background-color: var(--brand-scn); color: var(--color-wht); }
+.bg_lgt, .bg_hv_lgt:hover { background-color: var(--brand-lgt); color: var(--color-blk); }
+.bg_ntl, .bg, .bg_hv_ntl:hover { background-color: var(--brand-ntl); color: var(--color-blk); }
+
+.bg_high, .bg_hv_high:hover { background-color: var(--accent-high); color: var(--color-blk); }
+.bg_mid,  .bg_hv_mid:hover  { background-color: var(--accent-mid); color: var(--color-blk); }
+.bg_low,  .bg_hv_low:hover  { background-color: var(--accent-low); color: var(--color-blk); }
+.bg_info, .bg_hv_info:hover { background-color: var(--accent-info); color: var(--color-wht); }
+
+a, .lk {
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.lk_prm { color: var(--brand-prm); }
+.lk_scn { color: var(--brand-scn); }
+.lk_lgt { color: var(--brand-lgt); }
+.lk_ntl { color: var(--brand-ntl); }
+
+.lk_high { color: var(--accent-high); }
+.lk_mid  { color: var(--accent-mid); }
+.lk_low  { color: var(--accent-low); }
+.lk_info { color: var(--accent-info); }
+
+.tx_hv_prm:hover, .lk_prm:hover { color: color-mix(in srgb, var(--brand-prm), var(--color-blk) 30%) !important; }
+.tx_hv_scn:hover, .lk_scn:hover { color: color-mix(in srgb, var(--brand-scn), var(--color-blk) 30%) !important; }
+.tx_hv_lgt:hover, .lk_lgt:hover { color: color-mix(in srgb, var(--brand-lgt), var(--color-blk) 30%) !important; }
+.tx_hv_ntl:hover, .lk_ntl:hover { color: color-mix(in srgb, var(--brand-ntl), var(--color-blk) 30%) !important; }
+
+.tx_hv_high:hover, .lk_high:hover { color: color-mix(in srgb, var(--accent-high), var(--color-blk) 30%) !important; }
+.tx_hv_mid:hover,  .lk_mid:hover  { color: color-mix(in srgb, var(--accent-mid),  var(--color-blk) 30%) !important; }
+.tx_hv_low:hover,  .lk_low:hover  { color: color-mix(in srgb, var(--accent-low),  var(--color-blk) 30%) !important; }
+.tx_hv_info:hover, .lk_info:hover { color: color-mix(in srgb, var(--accent-info), var(--color-blk) 30%) !important; }
+
+.bg_hv:hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
