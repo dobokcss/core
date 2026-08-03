@@ -1,0 +1,19 @@
+/*!
+ * DobokCSS v2.0.0 (https://dobockcss.github.io)
+ * Author:  Estefanio N Santos <estefanions AT gmail DOT com> 
+ * License: MIT
+ * 
+ * Mobile-First, Flexbox & CSS Tokens Architecture
+ */
+
+.fl_l { float: left !important; }
+.fl_r { float: right !important; }
+.fl_n { float: none !important; }
+
+.fl_c {
+    float: none !important;
+    display: block;
+    margin-inline: auto !important;
+    clear: both !important;
+}
+
