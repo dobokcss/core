@@ -1,0 +1,204 @@
+/*!
+ * DobokCSS v2.0.0 (https://dobockcss.github.io)
+ * Author:  Estefanio N Santos <estefanions AT gmail DOT com> 
+ * License: MIT
+ * 
+ * Mobile-First, Flexbox & CSS Tokens Architecture
+ */
+
+#mn_x_bt {
+    display: none;
+}
+
+label[for="mn_x_bt"] {
+    display: none;
+    cursor: pointer;
+    font-size: 26px;
+    padding: 12px 15px;
+    color: #333;
+}
+
+.mn_x {
+    width: 100%;
+    background-color: var(--brand-ntl, #ccc);
+}
+
+.mn_x ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mn_x > ul {
+    display: flex;
+    align-items: center;
+}
+
+.mn_x li {
+    position: relative;
+}
+
+.mn_x > ul > li > a {
+    display: block;
+    padding: 18px 25px;
+    font-size: 14px;
+    color: #444;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.mn_x > ul > li:hover > a,
+.mn_x > ul > li.active > a {
+    color: #000;
+    background-color: color-mix(in srgb, var(--brand-ntl, #ccc), #000 20%);
+}
+
+.mn_x.mn_prm { 
+    background-color: var(--brand-prm); 
+}
+.mn_x.mn_prm > ul > li > a { 
+    color: #ccc; 
+}
+.mn_x.mn_prm > ul > li:hover > a,
+.mn_x.mn_prm > ul > li.active > a { 
+    color: #fff; 
+    background-color: color-mix(in srgb, var(--brand-prm), #000 20%); 
+}
+
+.mn_x.mn_scn { 
+    background-color: var(--brand-scn); 
+}
+.mn_x.mn_scn > ul > li > a { 
+    color: #ccc; 
+}
+.mn_x.mn_scn > ul > li:hover > a,
+.mn_x.mn_scn > ul > li.active > a { 
+    color: #fff; 
+    background-color: color-mix(in srgb, var(--brand-scn), #000 20%); 
+}
+
+.mn_x.mn_ntl { 
+    background-color: var(--brand-ntl, #ccc); 
+}
+.mn_x.mn_ntl > ul > li > a { 
+    color: #444; 
+}
+.mn_x.mn_ntl > ul > li:hover > a,
+.mn_x.mn_ntl > ul > li.active > a { 
+    color: #000; 
+    background-color: color-mix(in srgb, var(--brand-ntl, #ccc), #000 20%); 
+}
+
+.mn_x.mn_lgt { 
+    background-color: #f6f6f6; 
+}
+.mn_x.mn_lgt > ul > li > a { 
+    color: #444; 
+}
+.mn_x.mn_lgt > ul > li:hover > a,
+.mn_x.mn_lgt > ul > li.active > a { 
+    color: #000; 
+    background-color: #d6d6d6; 
+}
+
+.mn_x ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: auto;
+    width: 240px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 4px 4px;
+    z-index: 1000;
+}
+
+.mn_x ul ul a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #444444 !important;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.mn_x ul ul li:last-child > a {
+    border-bottom: none;
+}
+
+.mn_x ul ul li:hover > a {
+    background-color: color-mix(in srgb, #ffffff, #000000 20%) !important;
+    color: #000000 !important;
+}
+
+.mn_x ul ul ul {
+    top: 0;
+    left: 100%;
+    right: auto;
+    border-radius: 4px;
+}
+
+.mn_x li.dp_l > ul {
+    left: auto;
+    right: 0;
+}
+
+.mn_x li.dp_l ul ul {
+    left: auto;
+    right: 100%;
+}
+
+.mn_x li:hover > ul {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    label[for="mn_x_bt"] {
+        display: block;
+    }
+
+    .mn_x {
+        display: none;
+    }
+
+    #mn_x_bt:checked ~ .mn_x {
+        display: block;
+    }
+
+    .mn_x > ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .mn_x ul ul,
+    .mn_x ul ul ul {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background-color: #ffffff;
+    }
+
+    .mn_x ul ul a {
+        padding-left: 35px;
+    }
+
+    .mn_x ul ul ul a {
+        padding-left: 50px;
+    }
+
+    .mn_x li.dp_l > ul,
+    .mn_x li.dp_l ul ul {
+        position: static;
+        left: auto;
+        right: auto;
+        width: 100%;
+    }
+
+
+
+}
+
