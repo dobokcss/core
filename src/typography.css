@@ -1,0 +1,80 @@
+/*!
+ * DobokCSS v2.0.0 (https://dobockcss.github.io)
+ * Author:  Estefanio N Santos <estefanions AT gmail DOT com> 
+ * License: MIT
+ * 
+ * Mobile-First, Flexbox & CSS Tokens Architecture
+ */
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.tx_xlg { font-size: var(--font-size-xlg, 2.5em); }
+.tx_lg  { font-size: var(--font-size-lg, 2em); }
+.tx_md  { font-size: var(--font-size-md, 1.25em); }
+.tx_sm  { font-size: var(--font-size-sm, 1em); }
+.tx_mn  { font-size: var(--font-size-mn, 0.875em); }
+.tx_mc  { font-size: var(--font-size-mc, 0.75em); }
+
+.tx_l { text-align: left; }
+.tx_r { text-align: right; }
+.tx_c { text-align: center; }
+.tx_j { text-align: justify; }
+
+.tx_lcr { text-transform: lowercase; }
+.tx_upc { text-transform: uppercase; }
+.tx_cap { text-transform: capitalize; }
+
+.tx_b  { font-weight: bold; }
+.tx_i  { font-style: italic; }
+.tx_du { text-decoration: underline; }
+.tx_dn { text-decoration: none; }
+.tx_do { text-decoration: overline; }
+
+.tx_prose strong,
+.tx_prose b {
+    font-weight: bold !important;
+}
+
+.tx_prose em,
+.tx_prose i {
+    font-style: italic !important;
+}
+
+.tx_prose u {
+    text-decoration: underline !important;
+}
+
+.tx_prose h1,
+.tx_prose h2,
+.tx_prose h3,
+.tx_prose h4,
+.tx_prose h5,
+.tx_prose h6,
+.tx_prose p,
+.tx_prose blockquote {
+    margin-bottom: var(--spacing-sm, 15px) !important;
+}
+
+.tx_prose ul {
+    list-style-type: disc !important;
+    padding-left: 1.5em !important;
+    margin-bottom: var(--spacing-sm, 15px) !important;
+}
+
+.tx_prose ol {
+    list-style-type: decimal !important;
+    padding-left: 1.5em !important;
+    margin-bottom: var(--spacing-sm, 15px) !important;
+}
+
+.tx_prose blockquote {
+    border-left: 4px solid var(--brand-prm, #ccc) !important;
+    padding-left: 1em !important;
+    font-style: italic !important;
+}
+
+
