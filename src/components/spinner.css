@@ -1,0 +1,78 @@
+/*!
+ * DobokCSS Components - Spinner / Loader
+ * https://dobokcss.github.io/components/spinners
+ * License: MIT
+ */
+
+.bd_spinner {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 5px solid var(--brand-ntl);
+    border-bottom-color: transparent !important;
+    border-radius: 50%;
+    color: transparent;
+    animation: spinner 1s linear infinite;
+}
+
+.bd_spinner_sm {
+    width: 15px;
+    height: 15px;
+    border-width: 2px;
+}
+
+.bd_spinner_md {
+    width: 25px;
+    height: 25px;
+    border-width: 3px;
+}
+
+.bd_spinner_lg {
+    width: 48px;
+    height: 48px;
+}
+
+.bd_spinner.bd_prm {
+    color: var(--brand-prm) !important;
+    border-color: var(--brand-prm) !important;
+}
+
+.bd_spinner.bd_scn {
+    color: var(--brand-scn) !important;
+    border-color: var(--brand-scn) !important;
+}
+
+.bd_spinner.bd_lgt {
+    color: color-mix(in srgb, var(--brand-lgt), var(--color-blk) 40%) !important;
+    border-color: var(--brand-lgt) !important;
+}
+
+.bd_spinner.bd_ntl {
+    color: color-mix(in srgb, var(--brand-ntl), var(--color-blk) 40%) !important;
+    border-color: var(--brand-ntl) !important;
+}
+
+.bd_spinner.bd_high {
+    color: color-mix(in srgb, var(--accent-high), var(--color-blk) 40%) !important;
+    border-color: var(--accent-high) !important;
+}
+
+.bd_spinner.bd_mid {
+    color: color-mix(in srgb, var(--accent-mid), var(--color-blk) 40%) !important;
+    border-color: var(--accent-mid) !important;
+}
+
+.bd_spinner.bd_low {
+    color: color-mix(in srgb, var(--accent-low), var(--color-blk) 40%) !important;
+    border-color: var(--accent-low) !important;
+}
+
+.bd_spinner.bd_info {
+    color: color-mix(in srgb, var(--accent-info), var(--color-blk) 40%) !important;
+    border-color: var(--accent-info) !important;
+}
+
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
