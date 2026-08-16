@@ -84,6 +84,10 @@
     min-width: var(--gr_flex_min, 250px);
 }
 
+.gr_flex_sm { min-width: 180px; }
+.gr_flex_md { min-width: 280px; }
+.gr_flex_lg { min-width: 380px; }
+
 @media (min-width: 576px) {
     .gr_sm_1  { grid-column: span 1; }
     .gr_sm_2  { grid-column: span 2; }
