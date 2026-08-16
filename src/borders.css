@@ -1,0 +1,73 @@
+/*!
+ * DobokCSS Utilities - Borders
+ * https://dobokcss.github.io/utilities/borders
+ * License: MIT
+ */
+
+.bd, 
+.bt.bd { 
+    border: 1px solid transparent; 
+}
+
+.bd_prm {
+    color: var(--brand-prm) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-color: var(--brand-prm) !important;
+}
+
+.bd_scn {
+    color: var(--brand-scn) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-color: var(--brand-scn) !important;
+}
+
+.bd_lgt {
+    color: var(--brand-lgt) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-color: var(--brand-lgt) !important;
+}
+
+.bd_ntl {
+    color: var(--brand-ntl) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-color: var(--brand-ntl) !important;
+}
+
+.bd_high {
+    color: var(--accent-high) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-color: var(--accent-high) !important;
+}
+
+.bd_mid {
+    color: var(--accent-mid) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-color: var(--accent-mid) !important;
+}
+
+.bd_low {
+    color: var(--accent-low) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-color: var(--accent-low) !important;
+}
+
+.bd_info {
+    color: var(--accent-info) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-color: var(--accent-info) !important;
+}
+
+.bd_circle {
+    border-radius: 50%;
+}
+
+.bd_rounded {
+    border-radius: var(--radius_md, 4px);
+}
+
+.bd_polaroid {
+    background-color: var(--color-wht, #ffffff);    
+    border: 1px solid rgba(0, 0, 0, 0.2);    
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);    
+    padding: 4px;
+}
