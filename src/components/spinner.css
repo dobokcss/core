@@ -8,11 +8,11 @@
     display: inline-block;
     box-sizing: border-box;
     border: 5px solid var(--brand-ntl);
-    border-bottom-color: transparent !important;
     border-radius: 50%;
     color: transparent;
     animation: spinner 1s linear infinite;
 }
+
 
 .bd_spinner_sm {
     width: 15px;
@@ -69,6 +69,18 @@
 .bd_spinner.bd_info {
     color: color-mix(in srgb, var(--accent-info), var(--color-blk) 40%) !important;
     border-color: var(--accent-info) !important;
+}
+
+.bd_spinner,
+.bd_spinner.bd_prm,
+.bd_spinner.bd_scn,
+.bd_spinner.bd_lgt,
+.bd_spinner.bd_ntl,
+.bd_spinner.bd_high,
+.bd_spinner.bd_mid,
+.bd_spinner.bd_low,
+.bd_spinner.bd_info {
+    border-bottom-color: transparent !important;
 }
 
 @keyframes spinner {
