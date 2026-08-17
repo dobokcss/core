@@ -1,135 +1,142 @@
-@charset "utf-8";
-
 /*!
- * DobokCSS Reset (https://dobokcss.github.io)
+ * DobokCSS Utilities - reset
+ * https://dobokcss.github.io/utilities/reset
  * Author: Estefanio N Santos <estefanions AT gmail DOT com>
- * Based on: Reset CSS v2.0 by Eric Meyer (https://meyerweb.com/eric/tools/css/reset/)
  * License: MIT
  */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    font-weight: normal; font-family: inherit;
-    font-size: 100%; font-style: normal;
-    outline:0; margin:0; padding:0;  background:transparent; 
-    box-sizing: border-box; -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    vertical-align: baseline; 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html, body {
+html {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+}
+
+html,
+body {
     height: 100%;
 }
 
 body {
-    color: #000000; 
-    background-color: #ffffff;
-
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: var(--tx-body, #000000);
+    background-color: var(--bg-body, #ffffff);
+    font-family: var(--font-base, Verdana, Arial, Helvetica, sans-serif);
     font-size: 1rem;
-
+    line-height: 1;
     display: flex;
     flex-direction: column;
-
-    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-u, s, del, ins, strike,
-a, a:link, a:visited, a:hover, a:active {
-    text-decoration: none
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
 }
 
-figcaption,figure,footer,article,aside,details,
-menu,nav,section,header,hgroup,hr{
-    display: block
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
 }
 
-hr{
-    height:1px; border-top:1px solid; margin:1em 0 
+h1, h2, h3, h4, h5, h6, p {
+    overflow-wrap: break-word;
 }
 
-input,select,textarea {
-    vertical-align: middle
-}
-
-button, input {
-    *overflow: visible; line-height: normal 
-}
-
-button, html input[type="button"],
-html input[type="reset"], 
-html input[type="submit"] {
-    cursor: pointer; 
-    -webkit-appearance: button
-}
-
-select,button,input[type="button"],input[type="reset"],
-input[type="submit"],input[type="radio"],
-input[type="checkbox"] {
-    cursor: pointer
-}
-
-input[type="search"] {
-    -webkit-box-sizing: content-box; 
-    -moz-box-sizing: content-box;
-    box-sizing: content-box; 
-    -webkit-appearance: textfield
-}
-
-input[type="search"]::-webkit-search-decoration, 
-input[type="search"]::-webkit-search-cancel-button {
--webkit-appearance: none
-} 
-
-textarea {
-    overflow: auto; vertical-align: top
-}
-
-fieldset {
-    border: 1px solid; margin: 0 2px; 
-    padding: 0.35em 0.625em 0.75em 
-}
-
-ol, ul {
-    list-style: none 
+ul, ol {
+    list-style: none;
 }
 
 blockquote, q {
-    quotes: none 
+    quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: ''; content: none; 
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+    content: none;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    border-top: 1px solid currentColor;
+    margin: 1em 0;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+}
+
+button,
+select,
+label,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: 0;
 }
 
 table {
-    border-collapse: collapse; border-spacing: 0 
-}
-
-form label{
-    cursor: pointer
-}
-
-fieldset, img {
-    border: 0 none 
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 caption, th {
-    text-align: left 
+    text-align: left;
 }
 
 :focus {
-    outline: 0 
+    outline: none;
+}
+
+:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
