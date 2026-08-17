@@ -5,6 +5,11 @@
  * License: MIT
  */
 
+.ds_block   { display: block !important; }
+.ds_none    { display: none !important; }
+.ds_iblock  { display: inline-block !important; }
+.ds_initial { display: initial !important; }
+
 .fl_l { float: left !important; }
 .fl_r { float: right !important; }
 .fl_n { float: none !important; }
