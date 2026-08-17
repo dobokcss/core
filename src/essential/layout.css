@@ -5,6 +5,13 @@
  * License: MIT
  */
 
+.container {
+    width: 100%;
+    max-width: var(--container-max, 1200px);
+    margin-inline: auto;
+    padding-inline: var(--space-md, 1rem);
+}
+
 .fx_content {
     flex: 1 0 auto;
 }
