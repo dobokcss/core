@@ -5,6 +5,10 @@
  * License: MIT
  */
 
+.fx_content {
+    flex: 1 0 auto;
+}
+
 .ds_block   { display: block !important; }
 .ds_none    { display: none !important; }
 .ds_iblock  { display: inline-block !important; }
@@ -13,6 +17,12 @@
 .fl_l { float: left !important; }
 .fl_r { float: right !important; }
 .fl_n { float: none !important; }
+
+.fold {
+    display: block;
+    width: 100%;
+    padding-block: var(--space-sm, 10px) var(--space-xl, 75px);
+}
 
 .fl_c {
     float: none !important;
