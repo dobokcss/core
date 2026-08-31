@@ -11,6 +11,7 @@
     margin-bottom: 15px;
 }
 
+
 .tx_xlg { font-size: var(--font-size-xlg, 2.5em); }
 .tx_lg  { font-size: var(--font-size-lg, 2em); }
 .tx_md  { font-size: var(--font-size-md, 1.25em); }
@@ -29,7 +30,7 @@
 
 .tx_b  { font-weight: bold; }
 .tx_i  { font-style: italic; }
-.tx_du { text-decoration: underline; }
+.tx_du, .lk_du, .lk_du a{ text-decoration: underline; }
 .tx_dn { text-decoration: none; }
 .tx_do { text-decoration: overline; }
 
