@@ -197,7 +197,111 @@ label[for="mn_x_bt"] {
         width: 100%;
     }
 
+}
 
+.mn_y {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.mn_y ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+
+.mn_y input[type="checkbox"]:checked ~ ul {
+  max-height: 2000px;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.mn_y a, 
+.mn_y label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  transition: background-color 0.2s ease;
+}
+
+.mn_y label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.mn_y label::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  margin-left: 8px;
+}
+
+.mn_y input[type="checkbox"]:checked + label::after {
+  transform: rotate(-135deg);
+}
+
+.mn_y ul a, 
+.mn_y ul label {
+  background: #f4f4f5;
+  padding-left: 28px;
+  border-left: 4px solid transparent;
+}
+
+.mn_y ul a:hover, 
+.mn_y ul label:hover {
+  background: #e4e4e7;
+  border-left-color: currentColor;
+}
+
+.mn_y ul ul a, 
+.mn_y ul ul label {
+  padding-left: 44px;
+  background: #eaeadc;
+}
+
+.mn_y.mn_prm > li > a, 
+.mn_y.mn_prm > li > label {
+  color: #fff;
+  background: var(--brand-prm, #2563eb);
+}
+
+.mn_y.mn_prm > li > a:hover, 
+.mn_y.mn_prm > li > label:hover {
+  background: color-mix(in srgb, var(--brand-prm, #2563eb), #000 12%);
+}
+
+.mn_y.mn_ntl > li > a, 
+.mn_y.mn_ntl > li > label {
+  color: #333;
+  background: var(--brand-ntl, #ccc);
+}
+
+.mn_y.mn_scn > li > a, 
+.mn_y.mn_scn > li > label {
+  color: #fff;
+  background: var(--brand-scn, #4f46e5);
+}
+
+.mn_y.mn_prm ul a, .mn_y.mn_prm ul label,
+.mn_y.mn_scn ul a, .mn_y.mn_scn ul label,
+.mn_y.mn_ntl ul a, .mn_y.mn_ntl ul label {
+  color: #3f3f46;
 }
 
