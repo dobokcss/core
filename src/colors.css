@@ -105,3 +105,69 @@ a, .lk {
     background-color: rgba(0, 0, 0, 0.05) !important;
 }
 
+.lk_prm.lt_y a, .lk_prm.lt_x a { color: var(--brand-prm); }
+.lk_scn.lt_y a, .lk_scn.lt_x a { color: var(--brand-scn); }
+.lk_ntl.lt_y a, .lk_ntl.lt_x a { color: var(--brand-ntl); }
+.lk_lgt.lt_y a, .lk_lgt.lt_x a { color: var(--brand-lgt); }
+
+.lk_high.lt_y a, .lk_high.lt_x a { color: var(--accent-high); }
+.lk_mid.lt_y a,  .lk_mid.lt_x a  { color: var(--accent-mid); }
+.lk_low.lt_y a,  .lk_low.lt_x a  { color: var(--accent-low); }
+.lk_info.lt_y a, .lk_info.lt_x a { color: var(--accent-info); }
+
+.lk_prm.lt_y a:hover,
+.lk_prm.lt_x a:hover,
+.lk_hv_prm.lt_y a:hover,
+.lk_hv_prm.lt_x a:hover { 
+    color: color-mix(in srgb, var(--brand-prm), #000 50%) !important;
+}
+
+.lk_scn.lt_y a:hover,
+.lk_scn.lt_x a:hover,
+.lk_hv_scn.lt_y a:hover,
+.lk_hv_scn.lt_x a:hover { 
+    color: color-mix(in srgb, var(--brand-scn), #000 50%) !important;
+}
+
+.lk_lgt.lt_y a:hover,
+.lk_lgt.lt_x a:hover,
+.lk_hv_lgt.lt_y a:hover,
+.lk_hv_lgt.lt_x a:hover {
+    color: color-mix(in srgb, var(--brand-lgt), #000 50%) !important;
+}
+
+.lk_ntl.lt_y a:hover,
+.lk_ntl.lt_x a:hover,
+.lk_hv_ntl.lt_y a:hover,
+.lk_hv_ntl.lt_x a:hover {
+    color: color-mix(in srgb, var(--brand-ntl), #000 50%) !important;
+}
+
+.lk_high.lt_y a:hover,
+.lk_high.lt_x a:hover,
+.lk_hv_high.lt_y a:hover,
+.lk_hv_high.lt_x a:hover {
+    color: color-mix(in srgb, var(--accent-high), #000 50%) !important;
+}
+
+.lk_mid.lt_y a:hover,
+.lk_mid.lt_x a:hover,
+.lk_hv_mid.lt_y a:hover,
+.lk_hv_mid.lt_x a:hover {
+    color: color-mix(in srgb, var(--accent-mid), #000 50%) !important;
+}
+
+.lk_low.lt_y a:hover,
+.lk_low.lt_x a:hover,
+.lk_hv_low.lt_y a:hover,
+.lk_hv_low.lt_x a:hover {
+    color: color-mix(in srgb, var(--accent-low), #000 50%) !important;
+}
+
+.lk_info.lt_y a:hover,
+.lk_info.lt_x a:hover,
+.lk_hv_info.lt_y a:hover,
+.lk_hv_info.lt_x a:hover {
+    color: color-mix(in srgb, var(--accent-info), #000 50%) !important;
+}
+
