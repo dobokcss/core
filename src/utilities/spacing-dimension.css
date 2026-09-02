@@ -1,0 +1,97 @@
+/*!
+ * DobokCSS Utilities - spacing & dimension
+ * https://dobokcss.github.io/utilities/spacing-dimension
+ * Author: Estefanio N Santos <estefanions AT gmail DOT com>
+ * License: MIT
+ */
+
+/* ==========================================================================
+   1. SPACING (MARGIN & PADDING) - LOGICAL PROPERTIES
+   ========================================================================== */
+
+.m_0 { margin: 0; }
+.mt_0 { margin-block-start: 0; }
+.mb_0 { margin-block-end: 0; }
+.ml_0 { margin-inline-start: 0; }
+.mr_0 { margin-inline-end: 0; }
+.mx_0 { margin-inline: 0; }
+.my_0 { margin-block: 0; }
+
+.p_0 { padding: 0; }
+.pt_0 { padding-block-start: 0; }
+.pb_0 { padding-block-end: 0; }
+.pl_0 { padding-inline-start: 0; }
+.pr_0 { padding-inline-end: 0; }
+.px_0 { padding-inline: 0; }
+.py_0 { padding-block: 0; }
+
+.m_1 { margin: var(--space-1, 0.25rem); }
+.mt_1 { margin-block-start: var(--space-1, 0.25rem); }
+.mb_1 { margin-block-end: var(--space-1, 0.25rem); }
+.ml_1 { margin-inline-start: var(--space-1, 0.25rem); }
+.mr_1 { margin-inline-end: var(--space-1, 0.25rem); }
+.mx_1 { margin-inline: var(--space-1, 0.25rem); }
+.my_1 { margin-block: var(--space-1, 0.25rem); }
+
+.p_1 { padding: var(--space-1, 0.25rem); }
+.pt_1 { padding-block-start: var(--space-1, 0.25rem); }
+.pb_1 { padding-block-end: var(--space-1, 0.25rem); }
+.pl_1 { padding-inline-start: var(--space-1, 0.25rem); }
+.pr_1 { padding-inline-end: var(--space-1, 0.25rem); }
+.px_1 { padding-inline: var(--space-1, 0.25rem); }
+.py_1 { padding-block: var(--space-1, 0.25rem); }
+
+.m_2 { margin: var(--space-2, 0.5rem); }
+.mt_2 { margin-block-start: var(--space-2, 0.5rem); }
+.mb_2 { margin-block-end: var(--space-2, 0.5rem); }
+.ml_2 { margin-inline-start: var(--space-2, 0.5rem); }
+.mr_2 { margin-inline-end: var(--space-2, 0.5rem); }
+.mx_2 { margin-inline: var(--space-2, 0.5rem); }
+.my_2 { margin-block: var(--space-2, 0.5rem); }
+
+.p_2 { padding: var(--space-2, 0.5rem); }
+.pt_2 { padding-block-start: var(--space-2, 0.5rem); }
+.pb_2 { padding-block-end: var(--space-2, 0.5rem); }
+.pl_2 { padding-inline-start: var(--space-2, 0.5rem); }
+.pr_2 { padding-inline-end: var(--space-2, 0.5rem); }
+.px_2 { padding-inline: var(--space-2, 0.5rem); }
+.py_2 { padding-block: var(--space-2, 0.5rem); }
+
+.m_3 { margin: var(--space-3, 1rem); }
+.mt_3 { margin-block-start: var(--space-3, 1rem); }
+.mb_3 { margin-block-end: var(--space-3, 1rem); }
+.ml_3 { margin-inline-start: var(--space-3, 1rem); }
+.mr_3 { margin-inline-end: var(--space-3, 1rem); }
+.mx_3 { margin-inline: var(--space-3, 1rem); }
+.my_3 { margin-block: var(--space-3, 1rem); }
+
+.p_3 { padding: var(--space-3, 1rem); }
+.pt_3 { padding-block-start: var(--space-3, 1rem); }
+.pb_3 { padding-block-end: var(--space-3, 1rem); }
+.pl_3 { padding-inline-start: var(--space-3, 1rem); }
+.pr_3 { padding-inline-end: var(--space-3, 1rem); }
+.px_3 { padding-inline: var(--space-3, 1rem); }
+.py_3 { padding-block: var(--space-3, 1rem); }
+
+.x_100 { width: 100% !important; margin-inline: 0; padding: 0; }
+.x_75  { width: 75%; }
+.x_50  { width: 50%; }
+.x_25  { width: 25%; }
+.x_a   { width: auto !important; }
+
+.vw_100 { width: 100vw; }
+.vh_100 { height: 100vh; }
+
+.x_mx    { max-width: 100% !important; }
+.x_mx_n  { max-width: none !important; }
+
+.y_0   { height: 0; }
+.y_100 { height: 100%; }
+.y_75  { min-height: 75%; }
+.y_50  { min-height: 50%; }
+.y_25  { min-height: 25%; }
+
+.y_1 { min-height: var(--space-1, 0.25rem); }
+.y_2 { min-height: var(--space-2, 0.5rem); }
+.y_3 { min-height: var(--space-3, 1rem); }
+
