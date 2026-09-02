@@ -1,0 +1,107 @@
+/*!
+ * DobokCSS Components - table
+ * https://dobokcss.github.io/components/table
+ * Author: Estefanio N Santos <estefanions AT gmail DOT com>
+ * License: MIT
+ */
+
+.tb,
+[class^="tb_"],
+[class*=" tb_"] {
+    width: 100%;
+    margin: 2px;
+    border-collapse: collapse;
+}
+
+.tb th,
+.tb td,
+[class^="tb_"] th,
+[class^="tb_"] td,
+[class*=" tb_"] th,
+[class*=" tb_"] td {
+    color: var(--tx-body, #444444);
+    background-color: var(--bg-body, #ffffff);
+    padding-block: 10px;
+    padding-inline: 5px;
+}
+
+.tb th,
+[class^="tb_"] th,
+[class*=" tb_"] th {
+    font-weight: bold;
+    text-align: left;
+}
+
+.tb_border th,
+.tb_border td {
+    border: 1px solid var(--border-color, #ededed);
+}
+
+.tb_striped tbody tr:nth-child(odd) td {
+    background-color: var(--bg-alt, #ededed);
+}
+
+.tb_fill tr {
+    margin-bottom: 10px;
+}
+
+.tb_fill td {
+    border-bottom: 10px solid var(--bg-body, #ffffff);
+}
+
+.tb_hv tbody tr:hover td,
+.tb_tr_hv td,
+.tb_tr_on td {
+    background-color: var(--bg-hover, #edeaea);
+}
+
+.tb_tr_off td {
+    background-color: var(--bg-body, #ffffff);
+}
+
+.tb_prm tr td, .tb_hv_prm tr:hover td {
+    color: var(--tx-prm, #ccc);
+    background-color: var(--brand-prm, #0056b3);
+}
+
+.tb_scn tr td, .tb_hv_scn tr:hover td {
+    color: var(--tx-scn, #ccc);
+    background-color: var(--brand-scn, #6c757d);
+}
+
+.tb_lgt tr td, .tb_hv_lgt tr:hover td {
+    color: var(--tx-body, #444);
+    background-color: var(--color-lgt, #f6f6f6);
+}
+
+.tb_ntl tr td, .tb_hv_ntl tr:hover td {
+    color: var(--tx-body, #444);
+    background-color: var(--color-ntl, #cccccc);
+}
+
+@media screen and (max-width: 890px) {
+    .tb_fluid thead {
+        display: none;
+    }
+
+    .tb_fluid tr {
+        display: block;
+        margin-top: 5px;
+        padding-bottom: 15px;
+    }
+
+    .tb_fluid td {
+        display: block;
+        text-align: right;
+        font-size: 0.8125rem; /* 13px */
+        margin-bottom: 3px;
+        min-height: 14px;
+    }
+
+    .tb_fluid td::before {
+        content: attr(colname);
+        float: left;
+        font-weight: bold;
+    }
+}
+
