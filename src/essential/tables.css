@@ -80,17 +80,17 @@
 }
 
 @media screen and (max-width: 890px) {
-    .tb_fluid thead {
+    .tb_stack thead {
         display: none;
     }
 
-    .tb_fluid tr {
+    .tb_stack tr {
         display: block;
         margin-top: 5px;
         padding-bottom: 15px;
     }
 
-    .tb_fluid td {
+    .tb_stack td {
         display: block;
         text-align: right;
         font-size: 0.8125rem; /* 13px */
@@ -98,7 +98,7 @@
         min-height: 14px;
     }
 
-    .tb_fluid td::before {
+    .tb_stack td::before {
         content: attr(colname);
         float: left;
         font-weight: bold;
