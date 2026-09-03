@@ -24,3 +24,16 @@
   object-fit: cover;
 }
 
+img, 
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+iframe, 
+object, 
+embed {
+  max-width: 100%;
+  border: 0;
+}
