@@ -1,0 +1,37 @@
+/*!
+ * DobokCSS Utilities - breadcrumb
+ * https://dobokcss.github.io/utilities/breadcrumb
+ * Author: Estefanio N Santos <estefanions AT gmail DOT com>
+ * License: MIT
+ */
+
+.lt_breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2, 0.5rem);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lt_breadcrumb li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2, 0.5rem);
+}
+
+.lt_breadcrumb li + li::before {
+  content: ">";
+  opacity: 0.6;
+}
+
+.lt_breadcrumb a {
+  color: var(--pri, #0099cc);
+  text-decoration: none;
+}
+
+.lt_breadcrumb a:hover {
+  color: var(--pri-hover, #0099aa);
+  text-decoration: underline;
+}
