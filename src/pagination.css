@@ -1,0 +1,56 @@
+/* 
+ * DobokCSS - Pagination 
+ * https://dobokcss.github.io/utilities/pagination
+ * License: MIT
+*/
+
+.pa {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-block: var(--space-3, 1rem);
+  justify-content: center;
+  gap: var(--space-1, 0.25rem);
+}
+
+.pa a {
+  display: inline-block;
+  padding: var(--space-2, 0.5rem) var(--space-3, 1rem);
+  background: var(--neu-light, #f8f9fa);
+  border: 1px solid var(--neu-border, #ddd);
+  border-radius: var(--radius, 4px);
+  text-decoration: none;
+  color: var(--neu-text, #333);
+  font-size: 0.875rem;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.pa.sm a { padding: var(--space-1, 0.25rem) var(--space-2, 0.5rem); }
+.pa.lg a { padding: var(--space-3, 1rem) var(--space-4, 1.5rem); }
+
+.pa a:hover {
+  background: var(--neu-hover, #e9ecef);
+  border-color: var(--neu-border-hover, #bbb);
+}
+
+.pa a:disabled,
+.pa a.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.pa a.active {
+  background: var(--active-bg, var(--brand-ntl, #333));
+  color: var(--active-color, var(--color-blk, #000));
+  border-color: var(--active-bg, var(--brand-ntl, #333));
+  font-weight: 600;
+  cursor: default;
+}
+
+.pa.pa_ac_prm  { --active-bg: var(--brand-prm);   --active-color: var(--color-wht, #fff); }
+.pa.pa_ac_scn  { --active-bg: var(--brand-scn);   --active-color: var(--color-wht, #fff); }
+.pa.pa_ac_high { --active-bg: var(--accent-high); --active-color: var(--color-wht, #fff); }
+.pa.pa_ac_mid  { --active-bg: var(--accent-mid);  --active-color: var(--color-wht, #fff); }
+.pa.pa_ac_low  { --active-bg: var(--accent-low);  --active-color: var(--color-wht, #fff); }
+.pa.pa_ac_info { --active-bg: var(--accent-info); --active-color: var(--color-wht, #fff); }
+
