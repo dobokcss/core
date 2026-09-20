@@ -10,49 +10,49 @@
 }
 
 .bd_prm {
-    color: var(--brand-prm) !important;
+    color: color-mix(in srgb, var(--brand-prm), var(--color-blk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--brand-prm) !important;
 }
 
 .bd_scn {
-    color: var(--brand-scn) !important;
+    color: color-mix(in srgb, var(--brand-scn), var(--color-blk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--brand-scn) !important;
 }
 
 .bd_lgt {
-    color: var(--brand-lgt) !important;
+    color: color-mix(in srgb, var(--brand-lgt), var(--color-blk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--brand-lgt) !important;
 }
 
 .bd_ntl {
-    color: var(--brand-ntl) !important;
+    color: color-mix(in srgb, var(--brand-ntl), var(--color-blk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--brand-ntl) !important;
 }
 
 .bd_high {
-    color: var(--accent-high) !important;
+    color: color-mix(in srgb, var(--accent-high), var(--color-blk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--accent-high) !important;
 }
 
 .bd_mid {
-    color: var(--accent-mid) !important;
+    color: color-mix(in srgb, var(--accent-mid), var(--color-blk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--accent-mid) !important;
 }
 
 .bd_low {
-    color: var(--accent-low) !important;
+    color: color-mix(in srgb, var(--accent-low), var(--color-blk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--accent-low) !important;
 }
 
 .bd_info {
-    color: var(--accent-info) !important;
+    color: color-mix(in srgb, var(--accent-info), var(--color-blk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--accent-info) !important;
 }
