@@ -1,0 +1,55 @@
+/*!
+ * DobokCSS Components - Buttons
+ * https://dobokcss.github.io/essential/buttons
+ * Author:  Estefanio N Santos <estefanions AT gmail DOT com> 
+ * License: MIT
+ */
+
+.bt {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-height: 2.5rem;
+  padding: var(--space-2, 0.5rem) var(--space-4, 1.25rem);
+  border: 1px solid transparent;
+  border-radius: var(--radius, 4px);
+  background-color: transparent;
+  color: var(--color-blk, #222);
+  font-family: inherit;
+  font-size: inherit;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.bt:hover {
+  background-color: var(--brand-ntl, #d6d6d6);
+}
+
+.bt_prm  { --bt-color: var(--brand-prm); }
+.bt_scn  { --bt-color: var(--brand-scn); }
+.bt_lgt  { --bt-color: var(--brand-lgt, #f6f6f6); }
+.bt_ntl  { --bt-color: var(--brand-ntl, #ccc); }
+.bt_high { --bt-color: var(--accent-high); }
+.bt_mid  { --bt-color: var(--accent-mid); }
+.bt_low  { --bt-color: var(--accent-low); }
+.bt_info { --bt-color: var(--accent-info); }
+
+[class*="bt_"] {
+  color: var(--color-blk, #000);
+  background-color: var(--bt-color);
+  border-color: var(--bt-color);
+}
+
+[class*="bt_"]:hover {
+  color: var(--color-wht, #fff);
+  background-color: color-mix(in srgb, var(--bt-color), #000 30%);
+  border-color: var(--bt-color);
+}
+
+.bt_prm, .bt_scn, .bt_high, .bt_info {
+  color: var(--color-wht, #fff);
+}
+
