@@ -1,0 +1,131 @@
+/*!
+ * DobokCSS Essential - Form Fields & Fieldsets
+ * https://dobokcss.github.io/essential/forms
+ * Author:  Estefanio N Santos <estefanions AT gmail DOT com> 
+ * License: MIT
+ */
+
+fieldset {
+  border: 1px solid var(--neu-border, #ccc);
+  border-radius: var(--radius, 4px);
+  padding: var(--space-3, 1rem);
+}
+
+legend {
+  padding-inline: var(--space-1, 0.25rem);
+}
+
+input,
+select,
+textarea {
+  color: var(--neu-text, #333);
+  background-color: var(--neu-bg, #fff);
+  border: 1px solid var(--neu-border, #ccc);
+  border-radius: var(--radius, 4px);
+  padding: var(--space-2, 0.5rem) var(--space-3, 0.75rem);
+  font-family: inherit;
+  font-size: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input,
+select {
+  min-height: 3.2rem;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  border-color: var(--brand-prm, #0099cc);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-prm, #0099cc) 20%, transparent);
+}
+
+.gr_field :is(input, select, textarea, button) {
+  width: 100%;
+  display: block;
+}
+
+/* ===================================== */
+
+/* Customização Material Design para Radio e Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.125rem;
+  height: 1.125rem;
+  min-height: auto;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  border: 2px solid var(--neu-border-hover, #757575);
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-grid;
+  place-content: center;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+input[type="radio"] { border-radius: 50%; }
+input[type="checkbox"] { border-radius: 3px; }
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.15s ease-in-out;
+  background-color: var(--brand-prm, #40535b);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.3rem;
+  height: 0.55rem;
+  border: solid var(--color-wht, #fff);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.15s ease-in-out;
+  margin-bottom: 2px;
+}
+
+input[type="radio"]:checked {
+  border-color: var(--brand-prm, #40535b);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:checked {
+  border-color: var(--brand-prm, #40535b);
+  background-color: var(--brand-prm, #40535b);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: rotate(45deg) scale(1);
+}
+
+:is(.lt_low, .gr_low) input[type="radio"]:checked { border-color: var(--accent-low); }
+:is(.lt_low, .gr_low) input[type="radio"]:checked::before { background-color: var(--accent-low); }
+:is(.lt_low, .gr_low) input[type="checkbox"]:checked { border-color: var(--accent-low); background-color: var(--accent-low); }
+
+:is(.lt_high, .gr_high) input[type="radio"]:checked { border-color: var(--accent-high); }
+:is(.lt_high, .gr_high) input[type="radio"]:checked::before { background-color: var(--accent-high); }
+:is(.lt_high, .gr_high) input[type="checkbox"]:checked { border-color: var(--accent-high); background-color: var(--accent-high); }
+
+:is(.lt_mid, .gr_mid) input[type="radio"]:checked { border-color: var(--accent-mid); }
+:is(.lt_mid, .gr_mid) input[type="radio"]:checked::before { background-color: var(--accent-mid); }
+:is(.lt_mid, .gr_mid) input[type="checkbox"]:checked { border-color: var(--accent-mid); background-color: var(--accent-mid); }
+
+:is(.lt_info, .gr_info) input[type="radio"]:checked { border-color: var(--accent-info); }
+:is(.lt_info, .gr_info) input[type="radio"]:checked::before { background-color: var(--accent-info); }
+:is(.lt_info, .gr_info) input[type="checkbox"]:checked { border-color: var(--accent-info); background-color: var(--accent-info); }
+
+:is(.lt_scn, .gr_scn) input[type="radio"]:checked { border-color: var(--brand-scn); }
+:is(.lt_scn, .gr_scn) input[type="radio"]:checked::before { background-color: var(--brand-scn); }
+:is(.lt_scn, .gr_scn) input[type="checkbox"]:checked { border-color: var(--brand-scn); background-color: var(--brand-scn); }
