@@ -1,0 +1,59 @@
+/*!
+ * DobokCSS Components - Alerts
+ * https://dobokcss.github.io/essential/alerts
+ * Author:  Estefanio N Santos <estefanions AT gmail DOT com> 
+ * License: MIT
+ */
+
+.al {
+  position: relative;
+  width: 100%;
+  padding: var(--space-3, 1rem);
+  margin-block: var(--space-2, 0.5rem);
+  border-radius: var(--radius-lg, 6px);
+  display: block;
+  overflow: hidden;
+}
+
+.al :is(b, strong) { font-weight: 600; }
+.al :is(i, em) { font-style: italic; }
+
+.al_high { --al-color: var(--accent-high); }
+.al_mid  { --al-color: var(--accent-mid); }
+.al_low  { --al-color: var(--accent-low); }
+.al_info { --al-color: var(--accent-info); }
+
+[class*="al_"] {
+  background-color: color-mix(in srgb, var(--al-color), #fff 85%);
+  color: color-mix(in srgb, var(--al-color), #000 60%);
+  border: 1px solid color-mix(in srgb, var(--al-color), #000 20%);
+}
+
+[class*="al_"] a {
+  color: color-mix(in srgb, var(--al-color), #000 70%);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+[class*="al_"] a:hover {
+  color: color-mix(in srgb, var(--al-color), #000 90%);
+}
+
+.al .bt_close {
+  --bt-color: var(--al-color);
+  position: absolute;
+  top: var(--space-1, 0.25rem);
+  inset-inline-end: var(--space-1, 0.25rem);
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: var(--space-1, 0.25rem) var(--space-2, 0.5rem);
+  min-height: auto;
+  border: 0 none;
+  z-index: 10;
+}
+
+.al.al_info .bt_close,
+.al.al_high .bt_close {
+  color: var(--color-wht, #fff);
+}
+
