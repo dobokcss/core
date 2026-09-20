@@ -171,3 +171,23 @@ a, .lk {
     color: color-mix(in srgb, var(--accent-info), #000 50%) !important;
 }
 
+
+
+.bg_alpha, 
+.hv_bg_alpha:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg_raw {
+  background-color: transparent;
+}
+
+.tagline {
+  color: var(--neu-muted, #999);
+}
+
+.cr_pn { cursor: pointer; }
+.cr_mv { cursor: move; }
+.cr_hl { cursor: help; }
+.cr_nl { cursor: not-allowed; }
+
