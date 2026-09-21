@@ -1,13 +1,10 @@
 /*!
  * DobokCSS Utilities - spacing & dimension
+ * SPACING (MARGIN & PADDING) - LOGICAL PROPERTIES
  * https://dobokcss.github.io/utilities/spacing-dimension
  * Author: Estefanio N Santos <estefanions AT gmail DOT com>
  * License: MIT
  */
-
-/* ==========================================================================
-   1. SPACING (MARGIN & PADDING) - LOGICAL PROPERTIES
-   ========================================================================== */
 
 .m_0 { margin: 0; }
 .mt_0 { margin-block-start: 0; }
