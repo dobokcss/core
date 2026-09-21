@@ -5,7 +5,8 @@
  * License: MIT
  */
 
-#mn_x_bt {
+#mn_x_bt,
+.mn_y input[type="checkbox"]{
     display: none;
 }
 
