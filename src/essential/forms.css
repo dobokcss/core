@@ -41,14 +41,11 @@ textarea:focus-visible {
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-prm, #0099cc) 20%, transparent);
 }
 
-.gr_field :is(input, select, textarea, button) {
+.gr_field :is(input, select, textarea) {
   width: 100%;
   display: block;
 }
 
-/* ===================================== */
-
-/* Customização Material Design para Radio e Checkbox */
 input[type="radio"],
 input[type="checkbox"] {
   appearance: none;
