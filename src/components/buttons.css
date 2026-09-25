@@ -11,7 +11,7 @@
   justify-content: center;
   width: auto;
   min-height: 2.5rem;
-  padding: var(--space-2, 0.5rem) var(--space-4, 1.25rem);
+  padding: var(--space-2, 0.5rem) var(--space-4, 2.25rem);
   border: 1px solid transparent;
   border-radius: var(--radius, 4px);
   background-color: transparent;
