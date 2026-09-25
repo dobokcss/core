@@ -36,7 +36,7 @@
 }
 
 .bg_high, .bg_hv_high:hover {
-    color: var(--color-blk) !important;
+    color: var(--color-wht) !important;
     background-color: var(--accent-high) !important;
 }
 
