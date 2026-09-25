@@ -91,4 +91,5 @@
 .y_1 { min-height: var(--space-1, 0.25rem); }
 .y_2 { min-height: var(--space-2, 0.5rem); }
 .y_3 { min-height: var(--space-3, 1rem); }
+.y_4 { min-height: var(--space-4, 2.25rem); }
 
