@@ -15,7 +15,7 @@ label[for="mn_h_bt"] {
     cursor: pointer;
     font-size: 26px;
     padding: 12px 15px;
-    color: #333;
+    color: var(--brand-drk, #000);
 }
 
 .mn_h {
@@ -42,7 +42,7 @@ label[for="mn_h_bt"] {
     display: block;
     padding: 18px 25px;
     font-size: 14px;
-    color: #444;
+    color: color-mix(in srgb, var(--brand-drk), #fff 20%);
     text-decoration: none;
     letter-spacing: 0.5px;
     transition: background-color 0.2s ease, color 0.2s ease;
@@ -50,56 +50,68 @@ label[for="mn_h_bt"] {
 
 .mn_h > ul > li:hover > a,
 .mn_h > ul > li.active > a {
-    color: #000;
-    background-color: color-mix(in srgb, var(--brand-ntl, #ccc), #000 20%);
+    color: var(--brand-drk, #000);
+    background-color: color-mix(in srgb, var(--brand-ntl, #ccc), var(--brand-drk) 20%);
 }
 
 .mn_h.mn_prm {
     background-color: var(--brand-prm); 
 }
 .mn_h.mn_prm > ul > li > a {
-    color: #ccc; 
+    color: var(--brand-ntl, #ccc);
 }
 .mn_h.mn_prm > ul > li:hover > a,
 .mn_h.mn_prm > ul > li.active > a {
-    color: #fff; 
-    background-color: color-mix(in srgb, var(--brand-prm), #000 20%); 
+    color: var(--brand-lgt, #fff);
+    background-color: color-mix(in srgb, var(--brand-prm), var(--brand-drk) 20%);
 }
 
 .mn_h.mn_scn {
     background-color: var(--brand-scn); 
 }
 .mn_h.mn_scn > ul > li > a {
-    color: #ccc; 
+    color: var(--brand-ntl, #ccc);
 }
 .mn_h.mn_scn > ul > li:hover > a,
 .mn_h.mn_scn > ul > li.active > a {
-    color: #fff; 
-    background-color: color-mix(in srgb, var(--brand-scn), #000 20%); 
+    color: var(--brand-lgt, #fff);
+    background-color: color-mix(in srgb, var(--brand-scn), var(--brand-drk) 20%);
 }
 
 .mn_h.mn_ntl {
-    background-color: var(--brand-ntl, #ccc); 
+    background-color: var(--brand-ntl, #ccc);
 }
 .mn_h.mn_ntl > ul > li > a {
-    color: #444; 
+    color: color-mix(in srgb, var(--brand-drk), #fff 20%);
 }
 .mn_h.mn_ntl > ul > li:hover > a,
 .mn_h.mn_ntl > ul > li.active > a {
-    color: #000; 
-    background-color: color-mix(in srgb, var(--brand-ntl, #ccc), #000 20%); 
+    color: var(--brand-drk, #000);
+    background-color: color-mix(in srgb, var(--brand-ntl, #ccc), var(--brand-drk) 20%);
 }
 
 .mn_h.mn_lgt {
-    background-color: #f6f6f6; 
+    background-color: var(--brand-lgt, #fff);
 }
 .mn_h.mn_lgt > ul > li > a {
-    color: #444; 
+    color: color-mix(in srgb, var(--brand-drk), #fff 20%);
 }
 .mn_h.mn_lgt > ul > li:hover > a,
 .mn_h.mn_lgt > ul > li.active > a {
-    color: #000; 
-    background-color: #d6d6d6; 
+    color: var(--brand-drk, #000);
+    background-color: var(--brand-soft, #f8f8f8);
+}
+
+.mn_h.mn_drk {
+    background-color: var(--brand-drk, #000);
+}
+.mn_h.mn_drk > ul > li > a {
+    color: var(--brand-ntl, #ccc);
+}
+.mn_h.mn_drk > ul > li:hover > a,
+.mn_h.mn_drk > ul > li.active > a {
+    color: var(--brand-lgt, #fff);
+    background-color: color-mix(in srgb, var(--brand-drk), #fff 20%);
 }
 
 .mn_h ul ul {
@@ -109,7 +121,7 @@ label[for="mn_h_bt"] {
     left: 0;
     right: auto;
     width: 240px;
-    background-color: #ffffff;
+    background-color: var(--brand-lgt, #fff);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     border-radius: 0 0 4px 4px;
     z-index: 1000;
@@ -119,9 +131,9 @@ label[for="mn_h_bt"] {
     display: block;
     padding: 12px 20px;
     font-size: 14px;
-    color: #444444 !important;
+    color: var(--brand-drk, #000) !important;
     text-decoration: none;
-    background-color: #ffffff;
+    background-color: var(--brand-lgt, #fff);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -131,8 +143,8 @@ label[for="mn_h_bt"] {
 }
 
 .mn_h ul ul li:hover > a {
-    background-color: color-mix(in srgb, #ffffff, #000000 20%) !important;
-    color: #000000 !important;
+    background-color: var(--brand-soft, #f8f8f8) !important;
+    color: var(--brand-drk, #000) !important;
 }
 
 .mn_h ul ul ul {
@@ -179,7 +191,7 @@ label[for="mn_h_bt"] {
         position: static;
         width: 100%;
         box-shadow: none;
-        background-color: #ffffff;
+        background-color: var(--brand-lgt, #fff);
     }
 
     .mn_h ul ul a {
@@ -197,7 +209,6 @@ label[for="mn_h_bt"] {
         right: auto;
         width: 100%;
     }
-
 }
 
 .mn_v {
@@ -229,8 +240,8 @@ label[for="mn_h_bt"] {
   width: 100%;
   padding: 12px 16px;
   font-size: 14px;
-  color: #333;
-  background: #fff;
+  color: var(--brand-drk, #000);
+  background: var(--brand-lgt, #fff);
   text-decoration: none;
   box-sizing: border-box;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -260,49 +271,83 @@ label[for="mn_h_bt"] {
 
 .mn_v ul a,
 .mn_v ul label {
-  background: #f4f4f5;
+  background: var(--brand-soft, #f8f8f8);
   padding-left: 28px;
   border-left: 4px solid transparent;
 }
 
 .mn_v ul a:hover,
 .mn_v ul label:hover {
-  background: #e4e4e7;
+  background: color-mix(in srgb, var(--brand-soft), var(--brand-drk) 10%);
   border-left-color: currentColor;
 }
 
 .mn_v ul ul a,
 .mn_v ul ul label {
   padding-left: 44px;
-  background: #eaeadc;
+  background: color-mix(in srgb, var(--brand-soft), var(--brand-drk) 5%);
+}
+
+.mn_v.mn_drk > li > a,
+.mn_v.mn_drk > li > label {
+  color: var(--brand-lgt, #fff);
+  background: var(--brand-drk, #000);
 }
 
 .mn_v.mn_prm > li > a,
 .mn_v.mn_prm > li > label {
-  color: #fff;
-  background: var(--brand-prm, #2563eb);
-}
-
-.mn_v.mn_prm > li > a:hover,
-.mn_v.mn_prm > li > label:hover {
-  background: color-mix(in srgb, var(--brand-prm, #2563eb), #000 12%);
-}
-
-.mn_v.mn_ntl > li > a,
-.mn_v.mn_ntl > li > label {
-  color: #333;
-  background: var(--brand-ntl, #ccc);
+  color: var(--brand-lgt, #fff);
+  background: var(--brand-prm);
 }
 
 .mn_v.mn_scn > li > a,
 .mn_v.mn_scn > li > label {
-  color: #fff;
-  background: var(--brand-scn, #4f46e5);
+  color: var(--brand-lgt, #fff);
+  background: var(--brand-scn);
 }
+
+.mn_v.mn_ntl > li > a,
+.mn_v.mn_ntl > li > label {
+  color: var(--brand-drk, #000);
+  background: var(--brand-ntl, #ccc);
+}
+
+.mn_v.mn_lgt > li > a,
+.mn_v.mn_lgt > li > label {
+  color: var(--brand-drk, #000);
+  background: var(--brand-lgt, #fff);
+}
+
+.mn_v.mn_drk > li > a:hover,
+.mn_v.mn_drk > li > label:hover {
+  background: color-mix(in srgb, var(--brand-drk), var(--brand-lgt) 12%);
+}
+
+.mn_v.mn_prm > li > a:hover,
+.mn_v.mn_prm > li > label:hover {
+  background: color-mix(in srgb, var(--brand-prm), var(--brand-drk) 12%);
+}
+
+.mn_v.mn_scn > li > a:hover,
+.mn_v.mn_scn > li > label:hover {
+  background: color-mix(in srgb, var(--brand-scn), var(--brand-drk) 12%);
+}
+
+.mn_v.mn_ntl > li > a:hover,
+.mn_v.mn_ntl > li > label:hover {
+  background: color-mix(in srgb, var(--brand-ntl), var(--brand-drk) 12%);
+}
+
+.mn_v.mn_lgt > li > a:hover,
+.mn_v.mn_lgt > li > label:hover {
+  background: color-mix(in srgb, var(--brand-lgt), var(--brand-drk) 12%);
+}
+
+
 
 .mn_v.mn_prm ul a, .mn_v.mn_prm ul label,
 .mn_v.mn_scn ul a, .mn_v.mn_scn ul label,
-.mn_v.mn_ntl ul a, .mn_v.mn_ntl ul label {
-  color: #3f3f46;
+.mn_v.mn_ntl ul a, .mn_v.mn_ntl ul label,
+.mn_v.mn_drk ul a, .mn_v.mn_drk ul label {
+  color: var(--brand-drk, #000);
 }
-
