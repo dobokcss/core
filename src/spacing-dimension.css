@@ -92,4 +92,5 @@
 .y_2 { min-height: var(--space-2, 0.5rem); }
 .y_3 { min-height: var(--space-3, 1rem); }
 .y_4 { min-height: var(--space-4, 2.25rem); }
+.y_5 { min-height: var(--space-5, 4.50rem); }
 
