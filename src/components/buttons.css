@@ -15,7 +15,7 @@
   border: 1px solid transparent;
   border-radius: var(--radius, 4px);
   background-color: transparent;
-  color: var(--brand-drk, #222);
+  color: var(--brand-drk, #000);
   font-family: inherit;
   font-size: inherit;
   text-align: center;
@@ -32,7 +32,7 @@
 .bt_prm  { --bt-color: var(--brand-prm); }
 .bt_scn  { --bt-color: var(--brand-scn); }
 .bt_ntl  { --bt-color: var(--brand-ntl, #ccc); }
-.bt_soft  { --bt-color: var(--brand-soft, #f8f8f8; }
+.bt_soft { --bt-color: var(--brand-soft, #f8f8f8); }
 .bt_lgt  { --bt-color: var(--brand-lgt, #fff); }
 .bt_high { --bt-color: var(--accent-high); }
 .bt_mid  { --bt-color: var(--accent-mid); }
