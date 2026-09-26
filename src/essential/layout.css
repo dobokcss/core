@@ -104,6 +104,10 @@
     width: 100%;
 }
 
+.row_between {
+    justify-content: space-between !important;
+}
+
 .gr {
     grid-column: span 12;
     min-width: 0;
