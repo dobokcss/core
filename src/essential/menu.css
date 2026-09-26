@@ -5,12 +5,12 @@
  * License: MIT
  */
 
-#mn_x_bt,
-.mn_y input[type="checkbox"]{
+#mn_w_bt,
+.mn_h input[type="checkbox"]{
     display: none;
 }
 
-label[for="mn_x_bt"] {
+label[for="mn_w_bt"] {
     display: none;
     cursor: pointer;
     font-size: 26px;
@@ -18,27 +18,27 @@ label[for="mn_x_bt"] {
     color: #333;
 }
 
-.mn_x {
+.mn_w {
     width: 100%;
     background-color: var(--brand-ntl, #ccc);
 }
 
-.mn_x ul {
+.mn_w ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.mn_x > ul {
+.mn_w > ul {
     display: flex;
     align-items: center;
 }
 
-.mn_x li {
+.mn_w li {
     position: relative;
 }
 
-.mn_x > ul > li > a {
+.mn_w > ul > li > a {
     display: block;
     padding: 18px 25px;
     font-size: 14px;
@@ -48,61 +48,61 @@ label[for="mn_x_bt"] {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.mn_x > ul > li:hover > a,
-.mn_x > ul > li.active > a {
+.mn_w > ul > li:hover > a,
+.mn_w > ul > li.active > a {
     color: #000;
     background-color: color-mix(in srgb, var(--brand-ntl, #ccc), #000 20%);
 }
 
-.mn_x.mn_prm { 
+.mn_w.mn_prm {
     background-color: var(--brand-prm); 
 }
-.mn_x.mn_prm > ul > li > a { 
+.mn_w.mn_prm > ul > li > a {
     color: #ccc; 
 }
-.mn_x.mn_prm > ul > li:hover > a,
-.mn_x.mn_prm > ul > li.active > a { 
+.mn_w.mn_prm > ul > li:hover > a,
+.mn_w.mn_prm > ul > li.active > a {
     color: #fff; 
     background-color: color-mix(in srgb, var(--brand-prm), #000 20%); 
 }
 
-.mn_x.mn_scn { 
+.mn_w.mn_scn {
     background-color: var(--brand-scn); 
 }
-.mn_x.mn_scn > ul > li > a { 
+.mn_w.mn_scn > ul > li > a {
     color: #ccc; 
 }
-.mn_x.mn_scn > ul > li:hover > a,
-.mn_x.mn_scn > ul > li.active > a { 
+.mn_w.mn_scn > ul > li:hover > a,
+.mn_w.mn_scn > ul > li.active > a {
     color: #fff; 
     background-color: color-mix(in srgb, var(--brand-scn), #000 20%); 
 }
 
-.mn_x.mn_ntl { 
+.mn_w.mn_ntl {
     background-color: var(--brand-ntl, #ccc); 
 }
-.mn_x.mn_ntl > ul > li > a { 
+.mn_w.mn_ntl > ul > li > a {
     color: #444; 
 }
-.mn_x.mn_ntl > ul > li:hover > a,
-.mn_x.mn_ntl > ul > li.active > a { 
+.mn_w.mn_ntl > ul > li:hover > a,
+.mn_w.mn_ntl > ul > li.active > a {
     color: #000; 
     background-color: color-mix(in srgb, var(--brand-ntl, #ccc), #000 20%); 
 }
 
-.mn_x.mn_lgt { 
+.mn_w.mn_lgt {
     background-color: #f6f6f6; 
 }
-.mn_x.mn_lgt > ul > li > a { 
+.mn_w.mn_lgt > ul > li > a {
     color: #444; 
 }
-.mn_x.mn_lgt > ul > li:hover > a,
-.mn_x.mn_lgt > ul > li.active > a { 
+.mn_w.mn_lgt > ul > li:hover > a,
+.mn_w.mn_lgt > ul > li.active > a {
     color: #000; 
     background-color: #d6d6d6; 
 }
 
-.mn_x ul ul {
+.mn_w ul ul {
     display: none;
     position: absolute;
     top: 100%;
@@ -115,7 +115,7 @@ label[for="mn_x_bt"] {
     z-index: 1000;
 }
 
-.mn_x ul ul a {
+.mn_w ul ul a {
     display: block;
     padding: 12px 20px;
     font-size: 14px;
@@ -126,72 +126,72 @@ label[for="mn_x_bt"] {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.mn_x ul ul li:last-child > a {
+.mn_w ul ul li:last-child > a {
     border-bottom: none;
 }
 
-.mn_x ul ul li:hover > a {
+.mn_w ul ul li:hover > a {
     background-color: color-mix(in srgb, #ffffff, #000000 20%) !important;
     color: #000000 !important;
 }
 
-.mn_x ul ul ul {
+.mn_w ul ul ul {
     top: 0;
     left: 100%;
     right: auto;
     border-radius: 4px;
 }
 
-.mn_x li.dp_l > ul {
+.mn_w li.dp_l > ul {
     left: auto;
     right: 0;
 }
 
-.mn_x li.dp_l ul ul {
+.mn_w li.dp_l ul ul {
     left: auto;
     right: 100%;
 }
 
-.mn_x li:hover > ul {
+.mn_w li:hover > ul {
     display: block;
 }
 
 @media (max-width: 768px) {
-    label[for="mn_x_bt"] {
+    label[for="mn_w_bt"] {
         display: block;
     }
 
-    .mn_x {
+    .mn_w {
         display: none;
     }
 
-    #mn_x_bt:checked ~ .mn_x {
+    #mn_w_bt:checked ~ .mn_w {
         display: block;
     }
 
-    .mn_x > ul {
+    .mn_w > ul {
         flex-direction: column;
         align-items: stretch;
     }
 
-    .mn_x ul ul,
-    .mn_x ul ul ul {
+    .mn_w ul ul,
+    .mn_w ul ul ul {
         position: static;
         width: 100%;
         box-shadow: none;
         background-color: #ffffff;
     }
 
-    .mn_x ul ul a {
+    .mn_w ul ul a {
         padding-left: 35px;
     }
 
-    .mn_x ul ul ul a {
+    .mn_w ul ul ul a {
         padding-left: 50px;
     }
 
-    .mn_x li.dp_l > ul,
-    .mn_x li.dp_l ul ul {
+    .mn_w li.dp_l > ul,
+    .mn_w li.dp_l ul ul {
         position: static;
         left: auto;
         right: auto;
@@ -200,14 +200,14 @@ label[for="mn_x_bt"] {
 
 }
 
-.mn_y {
+.mn_h {
   width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.mn_y ul {
+.mn_h ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -216,13 +216,13 @@ label[for="mn_x_bt"] {
   transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
 }
 
-.mn_y input[type="checkbox"]:checked ~ ul {
+.mn_h input[type="checkbox"]:checked ~ ul {
   max-height: 2000px;
   transition: max-height 0.5s ease-in-out;
 }
 
-.mn_y a, 
-.mn_y label {
+.mn_h a,
+.mn_h label {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -237,12 +237,12 @@ label[for="mn_x_bt"] {
   transition: background-color 0.2s ease;
 }
 
-.mn_y label {
+.mn_h label {
   cursor: pointer;
   user-select: none;
 }
 
-.mn_y label::after {
+.mn_h label::after {
   content: "";
   display: inline-block;
   width: 6px;
@@ -254,55 +254,55 @@ label[for="mn_x_bt"] {
   margin-left: 8px;
 }
 
-.mn_y input[type="checkbox"]:checked + label::after {
+.mn_h input[type="checkbox"]:checked + label::after {
   transform: rotate(-135deg);
 }
 
-.mn_y ul a, 
-.mn_y ul label {
+.mn_h ul a,
+.mn_h ul label {
   background: #f4f4f5;
   padding-left: 28px;
   border-left: 4px solid transparent;
 }
 
-.mn_y ul a:hover, 
-.mn_y ul label:hover {
+.mn_h ul a:hover,
+.mn_h ul label:hover {
   background: #e4e4e7;
   border-left-color: currentColor;
 }
 
-.mn_y ul ul a, 
-.mn_y ul ul label {
+.mn_h ul ul a,
+.mn_h ul ul label {
   padding-left: 44px;
   background: #eaeadc;
 }
 
-.mn_y.mn_prm > li > a, 
-.mn_y.mn_prm > li > label {
+.mn_h.mn_prm > li > a,
+.mn_h.mn_prm > li > label {
   color: #fff;
   background: var(--brand-prm, #2563eb);
 }
 
-.mn_y.mn_prm > li > a:hover, 
-.mn_y.mn_prm > li > label:hover {
+.mn_h.mn_prm > li > a:hover,
+.mn_h.mn_prm > li > label:hover {
   background: color-mix(in srgb, var(--brand-prm, #2563eb), #000 12%);
 }
 
-.mn_y.mn_ntl > li > a, 
-.mn_y.mn_ntl > li > label {
+.mn_h.mn_ntl > li > a,
+.mn_h.mn_ntl > li > label {
   color: #333;
   background: var(--brand-ntl, #ccc);
 }
 
-.mn_y.mn_scn > li > a, 
-.mn_y.mn_scn > li > label {
+.mn_h.mn_scn > li > a,
+.mn_h.mn_scn > li > label {
   color: #fff;
   background: var(--brand-scn, #4f46e5);
 }
 
-.mn_y.mn_prm ul a, .mn_y.mn_prm ul label,
-.mn_y.mn_scn ul a, .mn_y.mn_scn ul label,
-.mn_y.mn_ntl ul a, .mn_y.mn_ntl ul label {
+.mn_h.mn_prm ul a, .mn_h.mn_prm ul label,
+.mn_h.mn_scn ul a, .mn_h.mn_scn ul label,
+.mn_h.mn_ntl ul a, .mn_h.mn_ntl ul label {
   color: #3f3f46;
 }
 

@@ -70,27 +70,27 @@
 .px_3 { padding-inline: var(--space-3, 1rem); }
 .py_3 { padding-block: var(--space-3, 1rem); }
 
-.x_100 { width: 100% !important; margin-inline: 0; padding: 0; }
-.x_75  { width: 75%; }
-.x_50  { width: 50%; }
-.x_25  { width: 25%; }
-.x_a   { width: auto !important; }
+.w_100 { width: 100% !important; margin-inline: 0; padding: 0; }
+.w_75  { width: 75%; }
+.w_50  { width: 50%; }
+.w_25  { width: 25%; }
+.w_a   { width: auto !important; }
 
 .vw_100 { width: 100vw; }
 .vh_100 { height: 100vh; }
 
-.x_mx    { max-width: 100% !important; }
-.x_mx_n  { max-width: none !important; }
+.w_mx    { max-width: 100% !important; }
+.w_mx_n  { max-width: none !important; }
 
-.y_0   { height: 0; }
-.y_100 { height: 100%; }
-.y_75  { min-height: 75%; }
-.y_50  { min-height: 50%; }
-.y_25  { min-height: 25%; }
+.h_0   { height: 0; }
+.h_100 { height: 100%; }
+.h_75  { min-height: 75%; }
+.h_50  { min-height: 50%; }
+.h_25  { min-height: 25%; }
 
-.y_1 { min-height: var(--space-1, 0.25rem); }
-.y_2 { min-height: var(--space-2, 0.5rem); }
-.y_3 { min-height: var(--space-3, 1rem); }
-.y_4 { min-height: var(--space-4, 2.25rem); }
-.y_5 { min-height: var(--space-5, 4.50rem); }
+.h_1 { min-height: var(--space-1, 0.25rem); }
+.h_2 { min-height: var(--space-2, 0.5rem); }
+.h_3 { min-height: var(--space-3, 1rem); }
+.h_4 { min-height: var(--space-4, 2.25rem); }
+.h_5 { min-height: var(--space-5, 4.50rem); }
 
