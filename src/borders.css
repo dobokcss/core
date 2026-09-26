@@ -9,6 +9,12 @@
     border: 1px solid transparent; 
 }
 
+.bd_drk {
+    color: color-mix(in srgb, var(--brand-drk), var(--brand-drk) 50%) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-color: var(--brand-drk) !important;
+}
+
 .bd_prm {
     color: color-mix(in srgb, var(--brand-prm), var(--brand-drk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -21,16 +27,22 @@
     border-color: var(--brand-scn) !important;
 }
 
-.bd_lgt {
-    color: color-mix(in srgb, var(--brand-lgt), var(--brand-drk) 50%) !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    border-color: var(--brand-lgt) !important;
-}
-
 .bd_ntl {
     color: color-mix(in srgb, var(--brand-ntl), var(--brand-drk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--brand-ntl) !important;
+}
+
+.bd_soft {
+    color: color-mix(in srgb, var(--brand-soft), var(--brand-drk) 50%) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-color: var(--brand-soft) !important;
+}
+
+.bd_lgt {
+    color: color-mix(in srgb, var(--brand-lgt), var(--brand-drk) 50%) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-color: var(--brand-lgt) !important;
 }
 
 .bd_high {

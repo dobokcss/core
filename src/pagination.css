@@ -49,6 +49,7 @@
   cursor: default;
 }
 
+.pa.pa_ac_drk  { --active-bg: var(--brand-drk);   --active-color: var(--brand-lgt, #fff); }
 .pa.pa_ac_prm  { --active-bg: var(--brand-prm);   --active-color: var(--brand-lgt, #fff); }
 .pa.pa_ac_scn  { --active-bg: var(--brand-scn);   --active-color: var(--brand-lgt, #fff); }
 .pa.pa_ac_high { --active-bg: var(--accent-high); --active-color: var(--brand-lgt, #fff); }

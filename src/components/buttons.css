@@ -28,10 +28,12 @@
   background-color: var(--brand-ntl, #d6d6d6);
 }
 
+.bt_drk  { --bt-color: var(--brand-drk); }
 .bt_prm  { --bt-color: var(--brand-prm); }
 .bt_scn  { --bt-color: var(--brand-scn); }
-.bt_lgt  { --bt-color: var(--brand-lgt, #f6f6f6); }
 .bt_ntl  { --bt-color: var(--brand-ntl, #ccc); }
+.bt_soft  { --bt-color: var(--brand-soft, #f8f8f8; }
+.bt_lgt  { --bt-color: var(--brand-lgt, #fff); }
 .bt_high { --bt-color: var(--accent-high); }
 .bt_mid  { --bt-color: var(--accent-mid); }
 .bt_low  { --bt-color: var(--accent-low); }
