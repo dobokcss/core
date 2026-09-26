@@ -8,15 +8,14 @@
 :root {
     --brand-prm: #40535b;
     --brand-scn: #3d6b7f;
-    --brand-ntl: #ccc;
-    --brand-lgt: #f8f8f8;
+    --brand-ntl: #cccccc;
+    --brand-soft: #f8f8f8;
+    --brand-lgt: #ffffff;
+    --brand-drk: #000000;
 
     --accent-high: #c00;
     --accent-mid: #ffd600;
     --accent-low: #00c853;
     --accent-info: #0b5ed7;
-
-    --color-wht: #ffffff;
-    --color-blk: #000000;
 }
 

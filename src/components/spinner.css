@@ -42,32 +42,32 @@
 }
 
 .bd_spinner.bd_lgt {
-    color: color-mix(in srgb, var(--brand-lgt), var(--color-blk) 40%) !important;
+    color: color-mix(in srgb, var(--brand-lgt), var(--brand-drk) 40%) !important;
     border-color: var(--brand-lgt) !important;
 }
 
 .bd_spinner.bd_ntl {
-    color: color-mix(in srgb, var(--brand-ntl), var(--color-blk) 40%) !important;
+    color: color-mix(in srgb, var(--brand-ntl), var(--brand-drk) 40%) !important;
     border-color: var(--brand-ntl) !important;
 }
 
 .bd_spinner.bd_high {
-    color: color-mix(in srgb, var(--accent-high), var(--color-blk) 40%) !important;
+    color: color-mix(in srgb, var(--accent-high), var(--brand-drk) 40%) !important;
     border-color: var(--accent-high) !important;
 }
 
 .bd_spinner.bd_mid {
-    color: color-mix(in srgb, var(--accent-mid), var(--color-blk) 40%) !important;
+    color: color-mix(in srgb, var(--accent-mid), var(--brand-drk) 40%) !important;
     border-color: var(--accent-mid) !important;
 }
 
 .bd_spinner.bd_low {
-    color: color-mix(in srgb, var(--accent-low), var(--color-blk) 40%) !important;
+    color: color-mix(in srgb, var(--accent-low), var(--brand-drk) 40%) !important;
     border-color: var(--accent-low) !important;
 }
 
 .bd_spinner.bd_info {
-    color: color-mix(in srgb, var(--accent-info), var(--color-blk) 40%) !important;
+    color: color-mix(in srgb, var(--accent-info), var(--brand-drk) 40%) !important;
     border-color: var(--accent-info) !important;
 }
 

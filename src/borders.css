@@ -10,49 +10,49 @@
 }
 
 .bd_prm {
-    color: color-mix(in srgb, var(--brand-prm), var(--color-blk) 50%) !important;
+    color: color-mix(in srgb, var(--brand-prm), var(--brand-drk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--brand-prm) !important;
 }
 
 .bd_scn {
-    color: color-mix(in srgb, var(--brand-scn), var(--color-blk) 50%) !important;
+    color: color-mix(in srgb, var(--brand-scn), var(--brand-drk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--brand-scn) !important;
 }
 
 .bd_lgt {
-    color: color-mix(in srgb, var(--brand-lgt), var(--color-blk) 50%) !important;
+    color: color-mix(in srgb, var(--brand-lgt), var(--brand-drk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--brand-lgt) !important;
 }
 
 .bd_ntl {
-    color: color-mix(in srgb, var(--brand-ntl), var(--color-blk) 50%) !important;
+    color: color-mix(in srgb, var(--brand-ntl), var(--brand-drk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--brand-ntl) !important;
 }
 
 .bd_high {
-    color: color-mix(in srgb, var(--accent-high), var(--color-blk) 50%) !important;
+    color: color-mix(in srgb, var(--accent-high), var(--brand-drk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--accent-high) !important;
 }
 
 .bd_mid {
-    color: color-mix(in srgb, var(--accent-mid), var(--color-blk) 50%) !important;
+    color: color-mix(in srgb, var(--accent-mid), var(--brand-drk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--accent-mid) !important;
 }
 
 .bd_low {
-    color: color-mix(in srgb, var(--accent-low), var(--color-blk) 50%) !important;
+    color: color-mix(in srgb, var(--accent-low), var(--brand-drk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--accent-low) !important;
 }
 
 .bd_info {
-    color: color-mix(in srgb, var(--accent-info), var(--color-blk) 50%) !important;
+    color: color-mix(in srgb, var(--accent-info), var(--brand-drk) 50%) !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-color: var(--accent-info) !important;
 }
@@ -66,7 +66,7 @@
 }
 
 .bd_polaroid {
-    background-color: var(--color-wht, #ffffff);    
+    background-color: var(--brand-lgt, #ffffff);    
     border: 1px solid rgba(0, 0, 0, 0.2);    
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);    
     padding: 4px;

@@ -43,16 +43,16 @@
 
 .pa a.active {
   background: var(--active-bg, var(--brand-ntl, #333));
-  color: var(--active-color, var(--color-blk, #000));
+  color: var(--active-color, var(--brand-drk, #000));
   border-color: var(--active-bg, var(--brand-ntl, #333));
   font-weight: 600;
   cursor: default;
 }
 
-.pa.pa_ac_prm  { --active-bg: var(--brand-prm);   --active-color: var(--color-wht, #fff); }
-.pa.pa_ac_scn  { --active-bg: var(--brand-scn);   --active-color: var(--color-wht, #fff); }
-.pa.pa_ac_high { --active-bg: var(--accent-high); --active-color: var(--color-wht, #fff); }
-.pa.pa_ac_mid  { --active-bg: var(--accent-mid);  --active-color: var(--color-wht, #fff); }
-.pa.pa_ac_low  { --active-bg: var(--accent-low);  --active-color: var(--color-wht, #fff); }
-.pa.pa_ac_info { --active-bg: var(--accent-info); --active-color: var(--color-wht, #fff); }
+.pa.pa_ac_prm  { --active-bg: var(--brand-prm);   --active-color: var(--brand-lgt, #fff); }
+.pa.pa_ac_scn  { --active-bg: var(--brand-scn);   --active-color: var(--brand-lgt, #fff); }
+.pa.pa_ac_high { --active-bg: var(--accent-high); --active-color: var(--brand-lgt, #fff); }
+.pa.pa_ac_mid  { --active-bg: var(--accent-mid);  --active-color: var(--brand-lgt, #fff); }
+.pa.pa_ac_low  { --active-bg: var(--accent-low);  --active-color: var(--brand-lgt, #fff); }
+.pa.pa_ac_info { --active-bg: var(--accent-info); --active-color: var(--brand-lgt, #fff); }
 
