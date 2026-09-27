@@ -12,13 +12,13 @@
 }
 
 
-.tx_xxl { font-size: var(--font-size-xxl, 4.5em); }
-.tx_xl  { font-size: var(--font-size-xl, 2.5em); }
-.tx_lg  { font-size: var(--font-size-lg, 2em); }
-.tx_md  { font-size: var(--font-size-md, 1.25em); }
-.tx_sm  { font-size: var(--font-size-sm, 1em); }
-.tx_mn  { font-size: var(--font-size-mn, 0.875em); }
-.tx_mc  { font-size: var(--font-size-mc, 0.75em); }
+.tx_xxl { font-size: var(--font-size-xxl, 4.5em) !important; }
+.tx_xl  { font-size: var(--font-size-xl, 2.5em) !important; }
+.tx_lg  { font-size: var(--font-size-lg, 2em) !important; }
+.tx_md  { font-size: var(--font-size-md, 1.25em) !important; }
+.tx_sm  { font-size: var(--font-size-sm, 1em) !important; }
+.tx_mn  { font-size: var(--font-size-mn, 0.875em) !important; }
+.tx_mc  { font-size: var(--font-size-mc, 0.75em) !important; }
 
 .tx_l { text-align: left; }
 .tx_r { text-align: right; }
