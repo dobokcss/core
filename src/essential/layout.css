@@ -16,6 +16,12 @@
     flex: 1 0 auto;
 }
 
+.fx_center {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md, 1rem);
+}
+
 .ds_block   { display: block !important; }
 .ds_none    { display: none !important; }
 .ds_iblock  { display: inline-block !important; }
