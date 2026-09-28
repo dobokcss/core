@@ -88,6 +88,15 @@
     padding-block: var(--space-sm, 10px) var(--space-xl, 75px);
 }
 
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .fl_c {
     float: none !important;
     display: block;
