@@ -59,6 +59,10 @@
   color: var(--brand-drk, #000) !important;
 }
 
-.bt_prm, .bt_scn, .bt_high, .bt_info {
+.bt_drk, .bt_prm, .bt_scn, .bt_high, .bt_info {
   color: var(--brand-lgt, #fff) !important;
+}
+
+.bt_drk:hover {
+  background-color: color-mix(in srgb, var(--bt-color), var(--brand-lgt) 20%);
 }

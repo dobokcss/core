@@ -84,7 +84,7 @@ a, .lk {
 .lk_info { color: var(--accent-info) !important; }
 
 .tx_hv_drk:hover, .lk_drk:hover {
-    color: color-mix(in srgb, var(--brand-drk), var(--brand-drk) 30%) !important;
+    color: color-mix(in srgb, var(--brand-drk), var(--brand-lgt) 20%) !important;
 }
 
 .tx_hv_prm:hover, .lk_prm:hover {
