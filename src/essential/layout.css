@@ -89,6 +89,29 @@
 .lt_h.lt_dropdown ul a:hover {
     background: color-mix(in srgb, var(--brand-soft), var(--brand-drk) 10%);
 }
+.lt_dropdown.lt_dropdown_r li {
+    position: relative;
+}
+
+.lt_dropdown.lt_dropdown_r li ul {
+    left: auto !important;
+    right: 0 !important;
+    top: 100%;
+    min-width: 180px;
+}
+
+.lt_dropdown.lt_dropdown_r li ul {
+    left: auto !important;
+    right: 0 !important;
+}
+.lt_dropdown.lt_dropdown_r li ul li a {
+    white-space: nowrap;
+}
+
+.lt_dropdown.lt_dropdown_r li ul li ul {
+    left: auto !important;
+    right: 100% !important;
+}
 
 .fold {
     display: block;
