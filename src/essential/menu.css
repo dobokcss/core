@@ -38,6 +38,10 @@ label[for="mn_h_bt"] {
     position: relative;
 }
 
+.mn_h li a{
+    white-space: nowrap;
+}
+
 .mn_h > ul > li > a {
     display: block;
     padding: 18px 25px;
