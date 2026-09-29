@@ -154,12 +154,12 @@ label[for="mn_h_bt"] {
     border-radius: 4px;
 }
 
-.mn_h li.dp_l > ul {
+.mn_h li.mn_dropdown_r > ul {
     left: auto;
     right: 0;
 }
 
-.mn_h li.dp_l ul ul {
+.mn_h li.mn_dropdown_r ul ul {
     left: auto;
     right: 100%;
 }
@@ -202,8 +202,8 @@ label[for="mn_h_bt"] {
         padding-left: 50px;
     }
 
-    .mn_h li.dp_l > ul,
-    .mn_h li.dp_l ul ul {
+    .mn_h li.mn_dropdown_r > ul,
+    .mn_h li.mn_dropdown_r ul ul {
         position: static;
         left: auto;
         right: auto;
