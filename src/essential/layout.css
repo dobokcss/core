@@ -56,6 +56,9 @@
 .lt_h.lt_dropdown li ul {
     display: none;
     position: absolute;
+    background: var(--brand-soft);
+    border: 1px solid var(--brand-ntl);
+    border-radius: 4px;
     z-index: 500;
 }
 
@@ -80,6 +83,11 @@
 .lt_h.lt_dropdown ul a {
     display: block;
     padding: 5px 10px;
+}
+
+.lt_v.lt_dropdown ul a:hover,
+.lt_h.lt_dropdown ul a:hover {
+    background: color-mix(in srgb, var(--brand-soft), var(--brand-drk) 10%);
 }
 
 .fold {
