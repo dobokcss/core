@@ -1,0 +1,6 @@
+/*!
+ * DobokCSS Components - modal
+ * https://dobokcss.github.io/components/modal
+ * Author:  Estefanio N Santos <estefanions AT gmail DOT com> 
+ * License: MIT
+ */.modal_overlay{position:fixed;inset:0;z-index:1000;width:100%;height:100%;background-color:#00000080;backdrop-filter:blur(4px);overflow:auto}.modal_dialog{position:relative;z-index:1010;width:100%}
