@@ -2,8 +2,10 @@
 *.swp
 *.vim
 *.html
+*.test.*
 dev.*
 *.dev.*
 tags
 
+node_modules/
 dev/
