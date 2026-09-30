@@ -7,9 +7,6 @@
  * Mobile-First, Flexbox & CSS Tokens Architecture
  */
 
-/* Core & Tokens */
-@import 'reset.css';
-@import 'tokens.css';
 
 /* Utilities (Atômicos) */
 @import 'typography.css';
