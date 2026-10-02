@@ -85,8 +85,8 @@
     padding: 5px 10px;
 }
 
-.lt_v.lt_dropdown ul a:hover,
-.lt_h.lt_dropdown ul a:hover {
+.lt_v.lt_dropdown ul a:not(.bt):hover,
+.lt_h.lt_dropdown ul a:not(.bt):hover {
     background: color-mix(in srgb, var(--brand-soft), var(--brand-drk) 10%);
 }
 .lt_dropdown.lt_dropdown_r li {

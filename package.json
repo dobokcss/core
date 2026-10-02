@@ -1,9 +1,9 @@
 {
   "name": "dobok-css",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Utility-first CSS framework",
   "scripts": {
-    "build:css": "npx esbuild src/style.css --bundle --minify --legal-comments=none --banner:css=\"/*! DobokCSS - v2.0.0 | MIT License | https://dobokcss.github.io */\" --outfile=dist/style.min.css",
+    "build:css": "npx esbuild src/style.css --bundle --minify --legal-comments=none --banner:css=\"/*! DobokCSS - v2.0.1 | MIT License | https://dobokcss.github.io */\" --outfile=dist/style.min.css",
     "build:css:modules": "npx esbuild $(ls src/*.css | grep -vE 'tokens\\.css|style\\.css') src/essential/*.css src/components/*.css --outdir=dist/ --minify --entry-names=[name].min",
     "copy:tokens": "cp src/tokens.css dist/tokens.css",
     "build:css:all": "npm run build:css && npm run build:css:modules && npm run copy:tokens"
