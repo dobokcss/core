@@ -113,6 +113,23 @@
     right: 100% !important;
 }
 
+.lt_dropdown li ul li .bt {
+    display: block;
+    text-align: left;
+    border-radius: 0;
+}
+
+.lt_dropdown li ul li:first-of-type .bt {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.lt_dropdown li ul li:last-of-type .bt {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom: none;
+}
+
 .fold {
     display: block;
     width: 100%;
