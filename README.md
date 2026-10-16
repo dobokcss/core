@@ -1,5 +1,5 @@
 [![Maintainer](http://img.shields.io/badge/maintainer-@estefanionsantos-blue.svg?style=flat-square)](https://estefanionsantos.github.io/)
-[![Latest Version](https://img.shields.io/github/release/dobokcss/dobokcss.svg?style=flat-square)](https://github.com/dobokcss/dobokcss/releases)
+[![Latest Version](https://img.shields.io/github/release/dobokcss/core.svg?style=flat-square)](https://github.com/dobokcss/core/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
 # DobokCSS
