@@ -89,28 +89,30 @@
 .lt_h.lt_dropdown ul a:not(.bt):hover {
     background: color-mix(in srgb, var(--brand-soft), var(--brand-drk) 10%);
 }
-.lt_dropdown.lt_dropdown_r li {
+
+.lt_dropdown.lt_dropdown_r li,
+.lt_dropdown li:has(> ul.lt_dropdown_r) {
     position: relative;
 }
 
-.lt_dropdown.lt_dropdown_r li ul {
+.lt_dropdown.lt_dropdown_r li ul,
+.lt_dropdown ul.lt_dropdown_r {
     left: auto !important;
     right: 0 !important;
     top: 100%;
     min-width: 180px;
 }
 
-.lt_dropdown.lt_dropdown_r li ul {
-    left: auto !important;
-    right: 0 !important;
-}
-.lt_dropdown.lt_dropdown_r li ul li a {
+.lt_dropdown.lt_dropdown_r li ul li a,
+.lt_dropdown ul.lt_dropdown_r li a {
     white-space: nowrap;
 }
 
-.lt_dropdown.lt_dropdown_r li ul li ul {
+.lt_dropdown.lt_dropdown_r li ul li ul,
+.lt_dropdown ul.lt_dropdown_r li ul {
     left: auto !important;
     right: 100% !important;
+    top: 0;
 }
 
 .lt_dropdown li ul li .bt {

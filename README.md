@@ -19,13 +19,13 @@ Copy-paste the stylesheet `<link>` into your `<head>` before all other styleshee
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
         <!-- Design Tokens (Legível para customização) -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dobokcss/core@2.0.2/dist/tokens.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dobokcss/core@2.1.0/dist/tokens.css" />
         
         <!-- Reset Module -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dobokcss/core@2.0.2/dist/reset.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dobokcss/core@2.1.0/dist/reset.min.css" />
         
         <!-- DobokCSS Main Bundle -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dobokcss/core@2.0.2/dist/style.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dobokcss/core@2.1.0/dist/style.min.css" type="text/css" media="all" />
 
         <title>Dobok CSS</title>
     </head>
