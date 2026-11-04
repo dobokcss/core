@@ -165,7 +165,7 @@
 .row_flex {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing_md, 1rem);
+    gap: var(--spacing-md, 1rem);
     width: 100%;
 }
 
@@ -216,12 +216,12 @@
 }
 
 .gr_flex_3 {
-    flex: 1 1 calc(33.333% - var(--spacing_md, 1rem));
+    flex: 1 1 calc(33.333% - var(--spacing-md, 1rem));
     min-width: var(--gr_flex_min, 250px);
 }
 
 .gr_flex_2 {
-    flex: 1 1 calc(50% - var(--spacing_md, 1rem));
+    flex: 1 1 calc(50% - var(--spacing-md, 1rem));
     min-width: var(--gr_flex_min, 250px);
 }
 
