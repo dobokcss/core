@@ -6,7 +6,7 @@
  */
 
 fieldset {
-  border: 1px solid var(--neu-border, #ccc);
+  border: 1px solid var(--brand-ntl);
   border-radius: var(--radius, 4px);
   padding: var(--space-3, 1rem);
 }
@@ -20,7 +20,7 @@ select,
 textarea {
   color: var(--neu-text, #333);
   background-color: var(--neu-bg, #fff);
-  border: 1px solid var(--neu-border, #ccc);
+  border: 1px solid var(--brand-ntl);
   border-radius: var(--radius, 4px);
   padding: var(--space-2, 0.5rem) var(--space-3, 0.75rem);
   font-family: inherit;
@@ -37,8 +37,8 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
   outline: none;
-  border-color: var(--brand-prm, #0099cc);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-prm, #0099cc) 20%, transparent);
+  border-color: var(--brand-prm);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-prm) 20%, transparent);
 }
 
 .gr_field :is(input, select, textarea) {
@@ -57,7 +57,7 @@ input[type="checkbox"] {
   flex-shrink: 0;
   margin: 0;
   padding: 0;
-  border: 2px solid var(--neu-border-hover, #757575);
+  border: 2px solid var(--brand-ntl);
   background-color: transparent;
   cursor: pointer;
   display: inline-grid;
@@ -76,7 +76,7 @@ input[type="radio"]::before {
   border-radius: 50%;
   transform: scale(0);
   transition: transform 0.15s ease-in-out;
-  background-color: var(--brand-prm, #40535b);
+  background-color: var(--brand-prm);
 }
 
 input[type="checkbox"]::before {
@@ -91,7 +91,7 @@ input[type="checkbox"]::before {
 }
 
 input[type="radio"]:checked {
-  border-color: var(--brand-prm, #40535b);
+  border-color: var(--brand-prm);
 }
 
 input[type="radio"]:checked::before {
@@ -99,8 +99,8 @@ input[type="radio"]:checked::before {
 }
 
 input[type="checkbox"]:checked {
-  border-color: var(--brand-prm, #40535b);
-  background-color: var(--brand-prm, #40535b);
+  border-color: var(--brand-prm);
+  background-color: var(--brand-prm);
 }
 
 input[type="checkbox"]:checked::before {
