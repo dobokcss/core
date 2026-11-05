@@ -1,5 +1,5 @@
 [![Maintainer](http://img.shields.io/badge/maintainer-@estefanionsantos-blue.svg?style=flat-square)](https://estefanionsantos.github.io/)
-[![Latest Version](https://img.shields.io/github/release/dobokcss/core.svg?style=flat-square)](https://github.com/dobokcss/core/releases)
+[![Latest Version](https://img.shields.io/github/release/dobokcss/dobokcss.svg?style=flat-square)](https://github.com/dobokcss/dobokcss/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
 # DobokCSS
@@ -11,27 +11,6 @@ Looking to quickly add DobokCSS to your project? Use jsDelivr, a free open sourc
 #### CSS
 Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS architecture (Tokens, Reset, and Main Bundle).
 
-```html
-<!DOCTYPE HTML>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-        <!-- Design Tokens (Legível para customização) -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dobokcss/core@2.1.0/dist/tokens.css" />
-        
-        <!-- Reset Module -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dobokcss/core@2.1.0/dist/reset.min.css" />
-        
-        <!-- DobokCSS Main Bundle -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dobokcss/core@2.1.0/dist/style.min.css" type="text/css" media="all" />
+To check all available versions, documentation links, and download the source files, visit the [![Latest Version](https://img.shields.io/github/release/dobokcss/dobokcss.svg?style=flat-square)](https://github.com/dobokcss/dobokcss/releases)
+.
 
-        <title>Dobok CSS</title>
-    </head>
-<body>
-
-    <!-- content here -->
-
-</body>
-</html>
