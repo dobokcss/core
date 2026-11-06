@@ -17,6 +17,7 @@ To check all available versions, documentation links, and download the source fi
 .
 
 - Documentation is at  [https://dobokcss.github.io/](https://dobokcss.github.io/)
+- Clone the repo: `git clone https://github.com/dobokcss/core.git`
 
 
 ### Credits
